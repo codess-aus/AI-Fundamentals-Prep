@@ -83,7 +83,7 @@ Example:
 
 Machine learning comes in different styles — like different game modes 🎮. You pick the one that fits what you're trying to predict!
 
-[Machine Learning Types](https://github.com/codess-aus/AI-Fundamentals-Prep/blob/ae5107c40fd5783ce6021b4b91c416a02511cf38/docs/assets/machine-learning-types.png)
+![Machine Learning Types](https://github.com/codess-aus/AI-Fundamentals-Prep/blob/ae5107c40fd5783ce6021b4b91c416a02511cf38/docs/assets/machine-learning-types.png)
 
 ---
 
