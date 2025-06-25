@@ -157,4 +157,107 @@ Sometimes you:
 3. Train a **classification model** to predict future labels
 
 ---
+# 🤖 What is Regression?
+
+Regression is like teaching AI to **guess numbers** based on patterns it sees in past data.  
+It’s part of **supervised learning**, which means the AI learns from examples that include both:
+- **Features (x)** = the stuff we know (like temperature)
+- **Labels (y)** = the number we want to predict (like ice cream sales)
+
+![Supervised Training]()
+---
+
+# 🧠 How AI Learns to Predict: 4 Simple Steps
+
+## 1. 🎲 Split the Data
+Break your data into two parts:
+- **Training data** to teach the AI
+- **Validation data** to test how well it learned
+
+---
+
+## 2. 🧠 Train the Model
+Use an algorithm (like **linear regression**) to find patterns in the training data and build a model.
+
+---
+
+## 3. 🧪 Test the Model
+Use the validation data to make predictions and see how close the AI’s guesses (ŷ) are to the real answers (y).
+
+---
+
+## 4. 📏 Measure & Improve
+Compare the predicted answers to the real ones.  
+Use metrics (like MAE, MSE, RMSE, or R²) to see how accurate the model is.  
+Then tweak the algorithm or settings and repeat until it’s awesome!
+
+---
+
+And that’s how AI gets smarter with every loop! 🔁
+
+---
+
+## 📊 Visual Example
+
+Imagine a scatter plot with dots showing how many ice creams were sold at different temperatures.  
+The regression line goes through the middle of the dots, showing the trend.
+
+---
+
+# 🧪 Part 2: Evaluating a Regression Model
+
+Once your model is trained, it’s time to test how well it works!
+
+## 🧾 Step 1: Use the Validation Data
+
+We saved some data earlier — now we use it to:
+- Make predictions using the model
+- Compare those predictions to the real answers
+
+Example:
+
+| Temperature (x) | Actual Sales (y) | Predicted Sales (ŷ) |
+|-----------------|------------------|----------------------|
+| 52              | 0                | 2                    |
+| 67              | 14               | 17                   |
+| 70              | 23               | 20                   |
+| 73              | 22               | 23                   |
+| 78              | 26               | 28                   |
+| 83              | 36               | 33                   |
+
+---
+
+## 📏 How Do We Measure Accuracy?
+
+### 1. **MAE (Mean Absolute Error)**  
+Average of how far off the predictions were — no matter if too high or too low.  
+🧮 Example: MAE = 2.33 ice creams
+
+### 2. **MSE (Mean Squared Error)**  
+Like MAE, but it **squares** the errors — so big mistakes count more.  
+🧮 Example: MSE = 6
+
+### 3. **RMSE (Root Mean Squared Error)**  
+The square root of MSE — gives us the error in real units (like ice creams!).  
+🧮 Example: RMSE = 2.45 ice creams
+
+### 4. **R² (R-Squared)**  
+Tells us how much of the pattern the model explains.  
+- 1 = perfect prediction  
+- 0 = no better than guessing  
+🧮 Example: R² = 0.95 (which is awesome!)
+
+---
+
+## 🔁 Keep Improving!
+
+To get the best model, data scientists try different things:
+- 🧠 Choose better features
+- 🔧 Try different algorithms
+- ⚙️ Tweak the settings (called hyperparameters)
+
+They repeat the process until the model is accurate enough to use in the real world!
+
+---
+
 
