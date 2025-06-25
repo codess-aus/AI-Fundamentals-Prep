@@ -78,3 +78,83 @@ Example:
 - It learns patterns, builds a function, and makes predictions — all inside your apps!
 
 ---
+
+# 🧠 Types of Machine Learning
+
+Machine learning comes in different styles — like different game modes 🎮. You pick the one that fits what you're trying to predict!
+
+[Machine Learning Types](https://github.com/codess-aus/AI-Fundamentals-Prep/blob/ae5107c40fd5783ce6021b4b91c416a02511cf38/docs/assets/machine-learning-types.png)
+
+---
+
+## 🎓 Supervised Learning
+
+This is when the AI learns from examples that include both:
+- **Features (x)** = the stuff we know
+- **Labels (y)** = the answer we want it to learn
+
+### 🔢 Regression
+
+Predicts a **number** — like how many ice creams will sell or how fast a car goes.
+
+Examples:
+- 🍦 Ice cream sales based on weather
+- 🏠 House price based on size and location
+- 🚗 Car fuel efficiency based on engine size and weight
+
+### 🧪 Classification
+
+Predicts a **category** — like yes/no or which type of penguin 🐧.
+
+#### ✅ Binary Classification
+
+Only **two options** — like true/false or yes/no.
+
+Examples:
+- 🩺 Is a patient at risk for diabetes?
+- 💳 Will a customer default on a loan?
+- 📬 Will someone respond to a marketing email?
+
+#### 🎯 Multiclass Classification
+
+More than **two categories**, but only one correct answer.
+
+Examples:
+- 🐧 Penguin species: Adelie, Gentoo, or Chinstrap
+- 🎬 Movie genre: Comedy, Horror, Romance, etc.
+
+#### 🏷️ Multilabel Classification
+
+Sometimes, more than one label fits!
+
+Example:
+- 🎥 A movie could be both Sci-Fi *and* Comedy
+
+---
+
+## 🧩 Unsupervised Learning
+
+Here, the AI only gets **features (x)** — no labels. It figures out patterns on its own!
+
+### 🧠 Clustering
+
+Groups similar things together — like sorting socks 🧦 by color and size.
+
+Examples:
+- 🌸 Grouping flowers by petal size and shape
+- 🛍️ Segmenting customers by shopping habits
+
+> Clustering is like classification, but without knowing the categories ahead of time.  
+> You can even use clustering to *find* categories before training a classifier!
+
+---
+
+## 🔁 How It All Connects
+
+Sometimes you:
+1. Use **clustering** to find patterns
+2. Label those patterns
+3. Train a **classification model** to predict future labels
+
+---
+
