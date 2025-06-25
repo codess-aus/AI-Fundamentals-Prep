@@ -14,10 +14,6 @@ It’s a team-up between:
 
 This last step is called **inferencing** — it’s when the AI uses what it learned to make real-time decisions!
 
-# 🤖📊 What’s Machine Learning?
-
-Machine Learning (ML) is like teaching computers to *learn from data* so they can make smart predictions — kind of like guessing the future based on the past!
-
 ---
 
 ## 🧠 Where It Comes From
