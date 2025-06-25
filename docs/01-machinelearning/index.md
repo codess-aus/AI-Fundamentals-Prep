@@ -41,6 +41,7 @@ The big idea? Use past data to guess what might happen next!
 ML is like building a smart calculator that turns **inputs** into **predictions**.
 
 ---
+![Machine Learning](https://github.com/codess-aus/AI-Fundamentals-Prep/blob/baa2c0b1b4cfe777047df2e4f62c4dae549a32f3/docs/assets/machine-learning.png)
 
 ## 🧩 Step 1: Training
 
