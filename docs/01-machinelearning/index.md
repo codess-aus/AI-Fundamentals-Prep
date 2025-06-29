@@ -259,7 +259,7 @@ To get the best model, data scientists try different things:
 They repeat the process until the model is accurate enough to use in the real world!
 
 ---
-# 🧠 Binary Classification — Gen Alpha Style
+# 🧠 Binary Classification
 
 ---
 
