@@ -94,3 +94,74 @@ Here’s a 7-step flow to train your model:
 
 Start smart: Know what you’re solving, what kind of ML task it is, and how you’ll measure success. That’s how you build models that actually work. 💡
 
+# 📦 Get & Prep the Data – Step 2 of ML Flow  
+
+## 🧠 Why It Matters
+
+Data is the fuel for machine learning. 🚀  
+More data = better predictions.  
+Better quality = smarter models.
+
+To train your model, you need to:
+
+1. 🔍 Find your data source  
+2. 🍽️ Choose how to serve it  
+3. 🛠️ Build a data ingestion pipeline  
+
+---
+
+## 🔍 Step 1: Know Your Data
+
+| What to Identify | Examples |
+|------------------|----------|
+| **Data Source** | CRM system, SQL database, IoT device |
+| **Data Format** | Tabular (structured), semi-structured (like JSON), or unstructured (like images or text) |
+
+Once you know what you’ve got, decide what you *need* for training and how to format it.
+
+---
+
+## 🔄 Step 2: Ingest the Data
+
+You’ll need to **Extract**, **Transform**, and **Load** (ETL) your data into a place where Azure can use it.
+
+### 🔁 ETL Flow:
+
+1. 📤 Extract raw data (e.g., from IoT or CRM)  
+2. 🔄 Transform it (clean, reshape, aggregate)  
+3. 📥 Load it into Azure Blob Storage or another serving layer  
+4. 🧠 Train your model with Azure Machine Learning  
+
+![Data Injestion Pipeline](https://github.com/codess-aus/AI-Fundamentals-Prep/blob/e62aa89cf7559d652269f61c4c64d9bed5c94b2a/docs/assets/data-ingestion-pipeline.png)
+
+You can automate this with tools like:
+
+- Azure Synapse Analytics  
+- Azure Databricks  
+- Azure Machine Learning Pipelines  
+
+---
+
+## 🧪 Example: Weather Forecasting 🌦️
+
+You’ve got IoT devices measuring temperature every minute. But you want hourly averages in a clean table.
+
+[json to table](https://github.com/codess-aus/AI-Fundamentals-Prep/blob/e62aa89cf7559d652269f61c4c64d9bed5c94b2a/docs/assets/json-to-table.png)
+
+### Here's the flow:
+
+1. 📥 Extract JSON data from IoT devices  
+2. 🔄 Convert JSON to a table  
+3. 📊 Transform it to show average temp per hour per device  
+
+Now you’ve got a dataset ready for training your forecasting model. ✅
+
+---
+
+## 🎉 TL;DR
+
+Good data = good models.  
+Find it, clean it, transform it, and serve it up to Azure.  
+That’s how you prep like a pro. 💪
+
+
