@@ -164,4 +164,74 @@ Good data = good models.
 Find it, clean it, transform it, and serve it up to Azure.  
 That’s how you prep like a pro. 💪
 
+# 🏋️ Train the Model – Step 3 of ML Flow  
+
+## 🧠 Pick Your Training Setup
+
+Training a model = teaching it to make smart predictions.  
+But how you train depends on:
+
+- 🤖 What kind of model you need  
+- 🎮 How much control you want  
+- ⏳ How much time you’ve got  
+- 🧰 What tools your org already uses  
+- 💬 What coding language you vibe with  
+
+---
+
+## 🔧 Azure Training Tools
+
+Here are the top picks in the Azure ecosystem:
+
+### 🧠 Azure Machine Learning  
+All-in-one ML platform.  
+Use the Studio for drag-and-drop or go full code with Python SDK or CLI.  
+Perfect for end-to-end ML workflows.
+
+### 🔥 Azure Databricks  
+Built for big data and fast compute.  
+Great for data engineering + data science.  
+Works solo or integrates with Azure ML.
+
+### 📊 Microsoft Fabric  
+One-stop shop for analytics.  
+Prep data, train models, make predictions, and visualize in Power BI.  
+Super smooth for collab between analysts, engineers, and scientists.
+
+### 🧠 Azure AI Services  
+Prebuilt models ready to go (like image detection).  
+Use APIs to plug ML into your app fast.  
+Some models are customizable with your own data.
+
+---
+
+## 💡 Why Azure Machine Learning Slaps
+
+Azure ML is the go-to for training, deploying, and managing ML models.  
+It’s built for data scientists, devs, and ops teams to run full ML lifecycles.
+
+### 🔍 What You Can Do:
+
+- Explore + prep data  
+- Train + evaluate models  
+- Register + manage models  
+- Deploy models to apps  
+- Apply responsible AI (fairness, explainability, etc.)
+
+### 🛠️ Key Features:
+
+- Centralized dataset storage  
+- On-demand compute for training  
+- AutoML to test multiple algorithms + settings  
+- Visual pipelines for training + inferencing  
+- Integration with MLflow for tracking + scaling  
+- Built-in tools for responsible AI metrics
+
+---
+
+## 🎉 TL;DR
+
+Training your model = choosing the right tools + setup.  
+Azure gives you options whether you want full control or fast results.  
+Next up: let’s get hands-on with Azure ML Studio. 💻✨
 
