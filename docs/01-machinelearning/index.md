@@ -765,5 +765,26 @@ Transformers = the brains behind generative AI.
 They tokenize text, embed meaning, use attention to focus, and generate smart responses.  
 It’s not magic — it’s math, data, and a whole lotta training. 💥
 
+# 🧪 Module Assessment  
 
+### 1️⃣ You want to create a model to predict the cost of heating an office building based on its size in square feet and the number of employees working there. What kind of machine learning problem is this?
 
+- [ ] Regression  
+- [ ] Classification  
+- [ ] Clustering  
+
+---
+
+### 2️⃣ You need to evaluate a classification model. Which metric can you use?
+
+- [ ] Mean squared error (MSE)  
+- [ ] Precision  
+- [ ] Silhouette  
+
+---
+
+### 3️⃣ In deep learning, what is the purpose of a loss function?
+
+- [ ] To remove data for which no known label values are provided  
+- [ ] To evaluate the aggregate difference between predicted and actual label values  
+- [ ] To calculate the cost of training a neural network rather than a statistical model  
