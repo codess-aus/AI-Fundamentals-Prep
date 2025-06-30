@@ -457,4 +457,66 @@ Let’s see how our model did on some new penguins:
 
 Multiclass classification = your model picking the best label from a bunch. Whether it’s OvR or softmax, it’s all about those probabilities. And when it’s done right? You get stats that slap. 💥
 
+# 🧠 Clustering – Group Vibes Only 🌸  
+
+## 🤖 What’s Clustering All About?
+
+![flowers](https://github.com/codess-aus/AI-Fundamentals-Prep/blob/bded7ca6b6eb2c55693af98163546b5e7b024c2a/docs/assets/flowers.png)
+
+Clustering is like sorting your playlist by vibe instead of genre. 🎧 It’s **unsupervised ML**, which means no labels, no rules — just grouping stuff based on how similar it is. The model doesn’t know what the “right” answer is. It just finds patterns and builds squads (aka clusters) based on features.
+
+---
+
+## 🌼 Flower Power Example
+
+Imagine you’re a botanist checking out flowers. You count how many **leaves** and **petals** each one has:
+
+| Leaves (x₁) | Petals (x₂) |
+|-------------|-------------|
+| 0           | 5           |
+| 0           | 6           |
+| 1           | 3           |
+| 1           | 3           |
+| 1           | 6           |
+| 1           | 8           |
+| 2           | 3           |
+| 2           | 7           |
+| 2           | 8           |
+
+No labels, no species — just raw data. The goal? Group similar flowers together based on leaf and petal counts. 🌿🌸
+
+---
+
+## 🛠️ Training the Model – K-Means Style
+
+One of the go-to clustering algorithms is **K-Means**. Here’s how it rolls:
+
+1. **Vectorize the features** → Turn each flower into a point in space: `[x₁, x₂]`.
+2. **Pick your number of clusters (k)** → Say you want 3 squads, set `k = 3`.
+3. **Drop random centroids** → These are the squad leaders.
+4. **Assign each flower to the closest centroid** → Squad up!
+5. **Move centroids to the center of their squad** → Based on average distance.
+6. **Reassign flowers if needed** → If they vibe more with another squad.
+7. **Repeat until stable** → Or hit max iterations.
+
+🎞️ Imagine an animation where flowers keep switching squads until everyone’s chill.
+
+![Clustering](https://github.com/codess-aus/AI-Fundamentals-Prep/blob/bded7ca6b6eb2c55693af98163546b5e7b024c2a/docs/assets/clustering.gif)
+---
+
+## 📊 Evaluating the Squad Game
+
+Since there’s no “correct” label, we judge clustering by how tight and separate the squads are. Here’s how:
+
+- **Avg distance to cluster center** → How close each flower is to its squad leader.
+- **Avg distance to other centers** → How far it is from other squads.
+- **Max distance to cluster center** → The outlier in the squad.
+- **Silhouette score** → From -1 to 1. Closer to 1 = better squad vibes.
+
+---
+
+## 🎉 TL;DR
+
+Clustering = unsupervised squad building. No labels, just vibes. K-Means helps group similar data points, and we measure how good the squads are by how close and separate they are. 🌈
+
 
