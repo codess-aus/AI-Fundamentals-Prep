@@ -146,7 +146,7 @@ You can automate this with tools like:
 
 You’ve got IoT devices measuring temperature every minute. But you want hourly averages in a clean table.
 
-[json to table](https://github.com/codess-aus/AI-Fundamentals-Prep/blob/e62aa89cf7559d652269f61c4c64d9bed5c94b2a/docs/assets/json-to-table.png)
+![json to table](https://github.com/codess-aus/AI-Fundamentals-Prep/blob/e62aa89cf7559d652269f61c4c64d9bed5c94b2a/docs/assets/json-to-table.png)
 
 ### Here's the flow:
 
