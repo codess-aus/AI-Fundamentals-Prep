@@ -49,7 +49,7 @@ Before you build anything, you gotta know what you’re solving. This step is al
 The type of task you’re doing depends on your data and what kind of output you want. That choice affects which algorithms you can use.
 
 ![Tasks](https://github.com/codess-aus/AI-Fundamentals-Prep/blob/3d1254b198ed4951734fc316a0a15675bfe7e12b/docs/assets/02-01-overview-tasks.png)
----
+
 
 ## 🔍 Common ML Tasks
 
