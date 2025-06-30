@@ -235,3 +235,70 @@ Training your model = choosing the right tools + setup.
 Azure gives you options whether you want full control or fast results.  
 Next up: let’s get hands-on with Azure ML Studio. 💻✨
 
+# 💻 Use Azure ML Studio – Step 4 of ML Flow  
+
+## 🧠 What’s Azure ML Studio?
+
+Azure Machine Learning Studio is your browser-based HQ for all things ML.  
+No installs. No stress. Just log in and start building models like a boss. 🧑‍💻
+
+### What You Can Do:
+
+- 📥 Import + explore data  
+- ⚙️ Create compute (aka cloud power)  
+- 📓 Run code in notebooks  
+- 🧩 Build jobs + pipelines visually  
+- 🤖 Use AutoML to train models without writing code  
+- 📊 Check out model metrics + responsible AI info  
+- 🚀 Deploy models for real-time or batch predictions  
+- 📦 Manage models from a full-on model catalog  
+
+![Azure ML](https://github.com/codess-aus/AI-Fundamentals-Prep/blob/7315210522f6b3dd452043e80630416c37b5148d/docs/assets/azure-machine-learning-workspace.png)
+
+## 🛠️ Set Up Your Workspace
+
+To get started, you need an **Azure ML workspace**.  
+It’s the main resource where all your ML magic happens.  
+Azure auto-creates the extras (like storage, VMs, etc.) when you set it up in the Azure portal.
+
+---
+
+## ⚡ Choose Your Compute
+
+Training = compute power. You’ve got options:
+
+| Compute Type | Best For |
+|--------------|----------|
+| **CPU** | Small tabular data, low cost  
+| **GPU** | Images, text, big data, faster training  
+| **General Purpose** | Balanced CPU/memory – great for dev + testing  
+| **Memory Optimized** | Big data, in-memory analytics, notebooks  
+
+> 💡 Tip: Monitor your compute usage. If training is slow, try scaling up or switching to GPU. You can even go distributed with Spark (but that means rewriting your code).
+
+---
+
+## 🤖 AutoML = Easy Mode
+
+Don’t wanna write code? No problem.  
+**Azure AutoML** lets you train models with a step-by-step wizard.
+
+### AutoML Supports:
+
+- 🔢 Regression  
+- 📈 Time-series forecasting  
+- 🏷️ Classification  
+- 🖼️ Computer vision  
+- 💬 NLP  
+
+You bring the data, AutoML does the rest — and you can deploy your model as a service when it’s ready.
+
+---
+
+## 🎉 TL;DR
+
+Azure ML Studio = your all-in-one ML control center.  
+Train, test, deploy, and manage models — with or without code.  
+
+
+
