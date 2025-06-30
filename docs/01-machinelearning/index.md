@@ -367,15 +367,8 @@ That means it’s way better than guessing!
 
 Binary classification is like teaching a robot to say **yes or no** based on data. We train it, test it, and score it using metrics like accuracy, recall, precision, and AUC. The better the scores, the smarter the robot!
 
-Here’s your content rewritten in Gen Alpha speak and formatted in Markdown for direct use in an `index.md` file:
 
----
-
-```markdown
 # 🧠 Multiclass Classification – Level Up Your ML Game 🎮  
-**Status:** ✅ Completed  
-**XP:** 💯  
-**Time:** ⏱️ 12 mins  
 
 ## 🚀 What’s the Vibe?
 
