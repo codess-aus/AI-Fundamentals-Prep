@@ -410,4 +410,30 @@ Deploying your model = making it useful.
 Choose between real-time or batch based on speed, scale, and cost.  
 Next up: let’s talk deployment options. 🚀
 
+# Azure Machine Learning Quiz
+
+## Question 1
+**What does Automated machine learning in Azure Machine Learning enable you to do?**
+
+- [ ] Automatically deploy new versions of a model as they're trained  
+- [ ] Automatically provision Azure Machine Learning workspaces for new data scientists in an organization  
+- [ ] Automatically run multiple training jobs using different algorithms and parameters to find the best model  
+
+---
+
+## Question 2
+**Which of the following factors should you consider when choosing a service to train a machine learning model?**
+
+- [ ] The number of users in your organization  
+- [ ] How much time you want to invest in model training  
+- [ ] The approximate number of predictions the model needs to make in a month  
+
+---
+
+## Question 3
+**What is a key feature of Azure Machine Learning that supports end-to-end machine learning workflows?**
+
+- [ ] It provides ready-to-use models for image classification  
+- [ ] It requires integration with Microsoft Fabric to deploy models  
+- [ ] It offers centralized dataset management and automated machine learning  
 
