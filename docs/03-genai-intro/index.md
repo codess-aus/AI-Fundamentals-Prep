@@ -120,6 +120,79 @@ But RNNs had a problem: they remembered *everything*, even stuff that didn’t m
 - The AI might forget what really matters by the time it gets to the end.
 
 ---
+# 🚀 Transformers: The Real MVPs of Generative AI
+
+## 💡 What’s the Big Deal?
+
+Generative AI (like ChatGPT and Copilot) is powered by something called **Transformer architecture** — first introduced in a 2017 paper called *Attention Is All You Need*. And guess what? That paper changed the game. 🎮
+
+---
+
+## 🧱 Transformer Basics
+
+![Transformer architecture](https://github.com/codess-aus/AI-Fundamentals-Prep/blob/28514c3e2791374fee445ec934fbf81e18ac3db3/docs/assets/simplified-transformer-architecture.png)
+
+Transformers have two main parts:
+
+- **Encoder**: Reads the input and figures out what each word means in context.
+- **Decoder**: Uses that info to predict what comes next.
+
+The secret sauce? 👉 **Positional Encoding** + **Multi-Head Attention**
+
+---
+
+## 📍 Positional Encoding: Word Order Matters
+
+Words aren’t just random — their *order* matters. Transformers use **positional encoding** to remember where each word sits in a sentence.
+
+Instead of just turning words into numbers, they mix in position info too. So “Shakespeare” at position 4 means something different than “Shakespeare” at position 1. 🧠
+
+---
+
+## 👀 Attention: AI’s Superpower
+
+Old-school models like RNNs read one word at a time. 🐢  
+Transformers? They look at *everything* at once. ⚡
+
+This is called **attention** — the model figures out which words matter most when making predictions.
+
+Here’s how it works:
+
+- Each word becomes a **query**.
+- The model checks it against a list of **keys** and **values**.
+- It finds the closest match and pulls the right info.
+
+Example:
+
+| 🔑 Key               | 🎯 Value     |
+|---------------------|-------------|
+| Vincent Van Gogh    | Painter     |
+| William Shakespeare | Playwright  |
+| Charles Dickens     | Writer      |
+
+So if you ask:  
+**"Shakespeare’s work has inspired many movies, mostly thanks to his work as a..."**  
+The model goes: “Hmm, Shakespeare = Playwright!” 🎭
+
+---
+
+## 🧠 How It Calculates Attention
+
+- Words are turned into **vectors** (math lines).
+- The model compares angles between them (dot product).
+- Then it uses **softmax** to pick the best match — like a probability game.
+
+And with **multi-head attention**, it does this *multiple times at once* to get different perspectives. 🤯
+
+---
+
+## 🎉 Why Transformers Rock
+
+- They’re fast ⚡
+- They’re smart 🧠
+- They can handle long texts without forgetting stuff 📝
+
+Next up: Let’s explore the different types of language models built using Transformers. 👀
 
 
 
