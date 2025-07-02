@@ -225,6 +225,49 @@ Let’s break it down 👇
 
 Pick the one that fits your vibe and your project! 🎨🛠️
 
+# 🎯 Level Up Your Prompts!
+
+## 💬 Prompts = Your Power Move
+
+![Prompts](https://github.com/codess-aus/AI-Fundamentals-Prep/blob/ae5f28b403495d33f66d628b6a707e7d70467a8b/docs/assets/writing-prompts.png)
+
+Generative AI doesn’t just read your mind (yet 😜). It works best when you give it clear, specific instructions — aka **prompts**.
+
+Example:  
+📝 "Summarize the key points for adopting Copilot for a corporate exec. Keep it pro, max 6 bullet points."
+
+Boom 💥 — that’s how you get 🔥 results.
+
+---
+
+## 🛠️ Pro Tips to Boost Your Prompts
+
+Want better answers? Try these:
+
+1. 🎯 Start with a clear goal  
+2. 📚 Give it a source to work from  
+3. 🧠 Add context so it knows what’s up  
+4. 📏 Set expectations (like format or tone)  
+5. 🔁 Tweak and repeat to get it just right  
+
+---
+
+## 🧪 What’s Happening Behind the Scenes?
+
+Your prompt isn’t flying solo — it gets a glow-up before hitting the model:
+
+- 🧾 **System Message**: Sets the vibe (e.g. “You’re a friendly assistant!”)
+- 🕰️ **Conversation History**: Keeps track of what you’ve said before
+- ✍️ **Optimized Prompt**: Might get reworded or boosted with extra info
+
+---
+
+## 🧠 What’s Prompt Engineering?
+
+It’s the art of crafting killer prompts 💡  
+Whether you’re a dev building apps or just vibing with AI, learning prompt engineering = better, smarter, cooler responses. 😎
+
+
 
 
 
