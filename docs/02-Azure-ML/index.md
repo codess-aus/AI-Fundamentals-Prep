@@ -300,5 +300,114 @@ You bring the data, AutoML does the rest — and you can deploy your model as a 
 Azure ML Studio = your all-in-one ML control center.  
 Train, test, deploy, and manage models — with or without code.  
 
+# 🔗 Integrate a Model – Step 5 of ML Flow  
+
+## 🚀 Why Integration Matters
+
+Once your model is trained, it’s time to plug it into the real world.  
+That means **deploying it to an endpoint** so apps can use it to make predictions.
+
+You’ve got two main options:
+
+- ⚡ **Real-time predictions** → Instant results  
+- 📦 **Batch predictions** → Process data in chunks  
+
+---
+
+## 🌐 Deploy to an Endpoint
+
+An **endpoint** is like a smart URL your app can call to get predictions.
+
+### 🔥 Real-Time Predictions
+
+Perfect for apps that need instant feedback — like mobile apps or websites.
+
+**Example:**  
+A customer clicks on a shirt → model instantly recommends matching items.  
+The page loads, and boom 💥 — recommendations are ready.
+
+### 📊 Batch Predictions
+
+Great for scheduled jobs or big data reports.
+
+**Example:**  
+You forecast orange juice sales weekly.  
+Collect data all week → run the model once → update your report with predictions.
+
+---
+
+## 🤔 Real-Time vs Batch – How to Choose
+
+Ask yourself:
+
+- 🕒 How often do I need predictions?  
+- ⏱️ How fast do I need results?  
+- 🧍‍♂️ Do I need predictions one-by-one or in bulk?  
+- 💸 What’s my compute budget?
+
+---
+
+## 📅 Frequency of Scoring
+
+It’s not just about how often data comes in — it’s about how fast you need answers.
+
+- ⚡ **Real-time** → Predict instantly when data arrives  
+- 🕰️ **Batch** → Predict later, when you’ve collected enough data
+
+**Examples:**
+
+- IoT device → sends temp every minute  
+- Web shop → logs every purchase  
+- Finance system → updates quarterly
+
+---
+
+## 📋 Individual vs Batch Predictions
+
+Imagine a table of customer data:
+
+- Each row = one customer  
+- You want to predict if they’ll buy again
+
+You can:
+
+- 🧍‍♂️ **Individual** → One row in, one prediction out  
+- 📊 **Batch** → Whole table in, predictions for everyone
+
+Same goes for files — score one image or a whole folder.
+
+---
+
+## 💸 Compute Costs Matter
+
+Training isn’t the only time you need compute — deployment uses it too.
+
+### ⚡ Real-Time Compute
+
+Needs to be **always on** and **super fast**.  
+Use containers like:
+
+- Azure Container Instance (ACI)  
+- Azure Kubernetes Service (AKS)
+
+⚠️ You pay continuously — even when no one’s using it.
+
+### 📦 Batch Compute
+
+Needs to handle **big jobs** but can chill when idle.  
+Use compute clusters that:
+
+- Scale up when scoring starts  
+- Scale down to zero when done
+
+✅ Saves 💰 when not in use.
+
+---
+
+## 🎉 TL;DR
+
+Deploying your model = making it useful.  
+Choose between real-time or batch based on speed, scale, and cost.  
+Next up: let’s talk deployment options. 🚀
 
 
