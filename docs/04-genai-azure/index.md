@@ -224,3 +224,66 @@ Here are 4 ways to level it up:
 
 Let’s check out how Azure AI Foundry helps you **track performance** and keep your AI running smooth! 📊⚙️
 
+# 👀 Observability: Keep Your AI in Check
+
+## 📊 What’s Observability?
+
+Observability = watching your AI like a hawk 🦅  
+It’s all about making sure your generative AI is doing a great job — safely, smartly, and smoothly. 💡
+
+---
+
+## 🧠 3 Ways to Evaluate AI
+
+Here’s how we break it down:
+
+1. 🎯 **Performance & Quality**  
+   Is the response accurate, relevant, and grounded in real info?
+
+2. ⚠️ **Risk & Safety**  
+   Is the AI avoiding harmful or sketchy content?
+
+3. 🛠️ **Custom Evaluators**  
+   Got industry-specific goals? Use custom metrics to track what matters to YOU.
+
+---
+
+## 🧪 Evaluators in Azure AI Foundry
+
+Foundry’s got built-in tools to help you measure your AI’s vibe. Here are some of the MVPs:
+
+- 📌 **Groundedness**: Is the response backed by real context?
+- 🎯 **Relevance**: Does it actually answer the question?
+- 🗣️ **Fluency**: Is it smooth and readable?
+- 🔗 **Coherence**: Does it make logical sense?
+- 🛡️ **Content Safety**: Is it safe and respectful?
+
+---
+
+# ✅ Check Your Knowledge
+
+## Question 1  
+**Which of the following best describes the role of a generative AI agent?**
+
+- [ ] A chatbot that answers questions using pre-written responses  
+- [ ] An application that can understand input, reason, and take actions autonomously  
+- [ ] An application that monitors AI model performance  
+
+---
+
+## Question 2  
+**Which of the following best describes the purpose of the Azure AI Foundry model catalog?**
+
+- [ ] It stores user-generated content for Copilot Studio projects  
+- [ ] It exists so users can compare the cost of all Azure services in a subscription  
+- [ ] It is a centralized hub for discovering, comparing, and deploying models for generative AI  
+
+---
+
+## Question 3  
+**What is the purpose of fine-tuning in the context of generative AI?**
+
+- [ ] It's used to manage access, authentication, and data usage in AI models  
+- [ ] It involves connecting a language model to an organization's proprietary database  
+- [ ] It involves further training a pretrained model on a task-specific dataset to make it more suitable for a particular application  
+
