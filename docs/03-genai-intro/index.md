@@ -318,6 +318,32 @@ AI feels human, but it’s still math + data. That’s why being responsible mat
 
 👉 Want more info? Check out [Microsoft’s Responsible AI site!](https://microsoft.com/ai/responsible-ai)
 
+# 🤖 Generative AI Quiz
+
+## Question 1  
+**What are two key components of transformer architecture that support today's generative AI?**
+
+- [ ] Recurrent Neural Networks (RNNs) and memory retention  
+- [ ] Attention and positional encoding  
+- [ ] Prompt engineering and groundedness  
+
+---
+
+## Question 2  
+**What is the main difference between Large Language Models and Small Language Models?**
+
+- [ ] Large Language Models are trained with vast quantities of text. The text represents a wide range of general subject matter, while Small Language Models are trained with smaller, more subject-focused datasets.  
+- [ ] Large Language Models are trained to include an understanding of context, while Small Language Models aren't.  
+- [ ] Large Language Models have fewer parameters than Small Language Models.  
+
+---
+
+## Question 3  
+**What are the four stages in the process of developing and implementing a plan for responsible AI when using generative models according to Microsoft's guidance?**
+
+- [ ] Identify potential benefits, Measure the benefits, Enhance the benefits, Operate the solution responsibly  
+- [ ] Identify potential harms, Measure these harms, Mitigate the harms, Operate the solution responsibly  
+- [ ] Define the problem, Design the solution, Develop the solution, Deploy the solution  
 
 
 
