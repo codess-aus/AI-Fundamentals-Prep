@@ -93,5 +93,86 @@ Microsoft’s got your back:
 - 🧠 **Copilot Studio** — extend Microsoft 365 Copilot
 - 🚀 **Azure AI Foundry** — build custom AI from different models
 
+# 🛠️ Tools to Build Generative AI Like a Pro
+
+## 🚀 Microsoft’s AI Toolbox = Total Power-Up
+
+Microsoft’s got a whole squad of tools to help devs, data nerds, and big biz build epic generative AI apps. 💪  
+This module zooms in on **Azure AI Foundry** — the ultimate platform for building, customizing, and launching AI magic. ✨
+
+---
+
+## 🧱 What’s Azure AI Foundry?
+
+It’s a **PaaS** (Platform as a Service) that gives you full control over your AI builds.  
+You can tweak language models, deploy them in the cloud ☁️, and plug them into your own apps and services. 🔌
+Use the **Azure AI Foundry portal** to:
+
+- Build 🏗️  
+- Customize 🎨  
+- Manage 🧠  
+- Launch 🚀  
+
+---
+
+## 🔍 Foundry Components Breakdown
+
+| 🧩 Component | 💬 What It Does |
+|-------------|----------------|
+| 📚 Model Catalog | Discover, compare, and deploy all kinds of generative AI models |
+| 🧪 Playgrounds | Test ideas, try models, and explore Azure AI services — fast! |
+| 🛠️ Azure AI Services | Build, demo, test, and deploy AI tools |
+| 🧠 Solutions | Create agents + customize models |
+| 📊 Observability | Track how your models are doing in real time |
+
+---
+
+## 💬 Bonus Tool: Copilot Studio
+
+Want to build chatbots without hardcore coding?  
+**Copilot Studio** is your low-code BFF. 💻✨
+
+- Create conversational AI experiences  
+- Hosted in Microsoft 365  
+- Works in chat apps like Teams 💬  
+- No stress about infrastructure — it’s all managed for you 🙌
+
+👉 Learn more: Microsoft Copilot Studio
+
+# 🧠 Azure AI Foundry's Model Catalog: Pick Your Power-Up!
+
+## 🛍️ What’s in the Catalog?
+
+Azure AI Foundry = your go-to marketplace for AI models!  
+It’s packed with models from Microsoft, partners, and the community. 💥  
+Think of it like the App Store — but for AI brains. 🧠📲
+
+![Foundry Models](https://github.com/codess-aus/AI-Fundamentals-Prep/blob/8ec4551c8ffa41c886b016e3b016562c1972933e/docs/assets/foundry-model-catalog.png)
+
+## 🧠 Foundation Models = Built-In Genius
+
+Microsoft’s own models (like Azure OpenAI) are called **foundation models**.  
+They’re trained on *huge* amounts of text and ready to go! 🚀  
+Want them to be extra smart at something? You can **customize** them too. 🎨
+
+---
+
+## 🧪 Try Before You Deploy
+
+Not sure which model to pick? No stress!
+
+- 🧪 Use **playgrounds** to test different models
+- 🏆 Check out **model leaderboards** (preview!) to see which ones are crushing it in:
+  - Quality 💎  
+  - Cost 💸  
+  - Speed ⚡
+
+You even get cool graphs to compare models side-by-side. 📊👀
+
+![Model Benchmarks](https://github.com/codess-aus/AI-Fundamentals-Prep/blob/8ec4551c8ffa41c886b016e3b016562c1972933e/docs/assets/model-benchmarks-comparision.png)
+
+## 🔜 What’s Next?
+
+Let’s dive into how to get started with Azure AI Foundry and unlock its full potential! 🗝️🚀
 
 
