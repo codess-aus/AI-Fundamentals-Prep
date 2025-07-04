@@ -329,3 +329,37 @@ Foundry gives you two playgrounds to test stuff:
 ## 🔜 What’s Next?
 
 Let’s jump into the playground and start testing Azure AI Language features. Time to build something epic.
+
+# 🧠 Azure AI Language Quiz
+
+## 1️⃣ Key Talking Points
+
+**Question:**  
+You want to use Azure AI Language to determine the key talking points in a text document. Which feature of the service should you use?
+
+- [ ] Sentiment analysis  
+- [x] Key phrase extraction  
+- [ ] Entity detection
+
+---
+
+## 2️⃣ Sentiment Scores
+
+**Question:**  
+You use Azure AI Language to perform sentiment analysis on a sentence. The confidence scores 0.04 positive, 0.36 neutral, and 0.60 negative are returned. What do these confidence scores indicate about the sentence sentiment?
+
+- [ ] The document is positive  
+- [ ] The document is neutral  
+- [x] The document is negative
+
+---
+
+## 3️⃣ Named Entity Recognition
+
+**Question:**  
+What is the primary purpose of named entity recognition in text analysis?
+
+- [ ] To detect the sentiment of a document  
+- [x] To identify and categorize people, places, and organizations  
+- [ ] To summarize long documents
+
