@@ -147,3 +147,27 @@ It gives high scores to words that are 🔥 in one doc but meh in others.
 
 Let’s level up and explore how **deep learning** takes NLP to the next dimension! 🧠💥
 
+# 🧠 Understand Semantic Language Models  
+
+---
+
+## 🌐 What’s the Big Idea?
+
+Modern AI models are super smart because they understand how words relate to each other. They do this using **embeddings** — fancy math that turns words into **vectors** (a kind of number line in 3D or more dimensions).
+
+![Embeddings](https://github.com/codess-aus/AI-Fundamentals-Prep/blob/b2daca41d9737ee76125c3ba9362ddc90aa889e0/docs/assets/word-embeddings.png)
+---
+
+## 📊 Vectors Explained
+
+![Language Model](https://github.com/codess-aus/AI-Fundamentals-Prep/blob/b2daca41d9737ee76125c3ba9362ddc90aa889e0/docs/assets/language-model.png)
+
+Imagine each word is a rocket flying in space. The direction it flies shows what it *means*. Words that mean similar things fly in the same direction.
+
+### Example Vectors:
+```plaintext
+- "dog": [10, 3, 2]
+- "bark": [10, 2, 2]
+- "cat": [10, 3, 1]
+- "meow": [10, 2, 1]
+- "skateboard": [-3, 3, 2]
