@@ -38,7 +38,7 @@ Next up: Let’s explore the wild world of generative AI applications! 🌍🚀
 Generative AI apps run on **language models** — they’re the brains behind the scenes 🧠💬  
 These models handle the logic and make the magic happen when you chat with AI.
 
-![Application logic](/docs/assets/application-logic-image.png)
+![Application logic](docs/assets/application-logic-image.png)
 
 ---
 
@@ -147,7 +147,7 @@ Azure AI Foundry = your go-to marketplace for AI models!
 It’s packed with models from Microsoft, partners, and the community. 💥  
 Think of it like the App Store — but for AI brains. 🧠📲
 
-![Foundry Models](/docs/assets/foundry-model-catalog.png)
+![Foundry Models](docs/assets/foundry-model-catalog.png)
 
 ## 🧠 Foundation Models = Built-In Genius
 
@@ -169,7 +169,7 @@ Not sure which model to pick? No stress!
 
 You even get cool graphs to compare models side-by-side. 📊👀
 
-![Model Benchmarks](/docs/assets/model-benchmarks-comparision.png)
+![Model Benchmarks](docs/assets/model-benchmarks-comparision.png)
 
 ## 🔜 What’s Next?
 
@@ -177,7 +177,7 @@ Let’s dive into how to get started with Azure AI Foundry and unlock its full p
 
 # 🧠 Azure AI Foundry: Unlock the Cool Stuff
 
-![Foundry Overview](/docs/assets/foundry-overview-page.png)
+![Foundry Overview](docs/assets/foundry-overview-page.png)
 
 ## 🛠️ What’s Inside the Foundry?
 
@@ -193,7 +193,7 @@ Manage everything from the **overview page** — easy peasy! 👀
 
 ## 🔍 What You Can Do
 
-![Foundry Services](/docs/assets/foundry-ai-services-home-page.png)
+![Foundry Services](docs/assets/foundry-ai-services-home-page.png)
 
 When you create a hub, you also get access to:
 
@@ -204,9 +204,9 @@ When you create a hub, you also get access to:
 
 Test them all in **playgrounds** — like mini labs for your ideas! 🧪🎮
 
-![Foundry Playgrounds](/docs/assets/foundry-playgrounds-page.png)
+![Foundry Playgrounds](docs/assets/foundry-playgrounds-page.png)
 
-![Chat Playground](/docs/assets/foundry-chat-playground.png)
+![Chat Playground](docs/assets/foundry-chat-playground.png)
 
 ## 🎨 Customize Your Models Like a Pro
 

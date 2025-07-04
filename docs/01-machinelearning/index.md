@@ -41,7 +41,7 @@ The big idea? Use past data to guess what might happen next!
 ML is like building a smart calculator that turns **inputs** into **predictions**.
 
 ---
-![Machine Learning](/docs/assets/machine-learning.png)
+![Machine Learning](docs/assets/machine-learning.png)
 
 ## 🧩 Step 1: Training
 
@@ -83,7 +83,7 @@ Example:
 
 Machine learning comes in different styles — like different game modes 🎮. You pick the one that fits what you're trying to predict!
 
-![Machine Learning Types](/docs/assets/machine-learning-types.png)
+![Machine Learning Types](docs/assets/machine-learning-types.png)
 
 ---
 
@@ -461,7 +461,7 @@ Multiclass classification = your model picking the best label from a bunch. Whet
 
 ## 🤖 What’s Clustering All About?
 
-![flowers](/docs/assets/flowers.png)
+![flowers](docs/assets/flowers.png)
 
 Clustering is like sorting your playlist by vibe instead of genre. 🎧 It’s **unsupervised ML**, which means no labels, no rules — just grouping stuff based on how similar it is. The model doesn’t know what the “right” answer is. It just finds patterns and builds squads (aka clusters) based on features.
 
@@ -501,7 +501,7 @@ One of the go-to clustering algorithms is **K-Means**. Here’s how it rolls:
 
 🎞️ Imagine an animation where flowers keep switching squads until everyone’s chill.
 
-![Clustering](/docs/assets/clustering.gif)
+![Clustering](docs/assets/clustering.gif)
 ---
 
 ## 📊 Evaluating the Squad Game

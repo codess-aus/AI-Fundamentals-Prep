@@ -1,8 +1,8 @@
 # Site settings
 title: AI Fundamentals Prep
 description: A comprehensive guide to AI fundamentals, machine learning, and Azure AI services
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site
+baseurl: "/AI-Fundamentals-Prep" # the subpath of your site, e.g. /blog
+url: "https://codess-aus.github.io" # the base hostname & protocol for your site
 
 # Build settings
 markdown: kramdown

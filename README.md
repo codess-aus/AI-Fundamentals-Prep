@@ -4,9 +4,7 @@ A comprehensive learning resource for AI fundamentals, machine learning concepts
 
 ## 🌐 Live Website
 
-Visit the live website: [https://YOUR-USERNAME.github.io/AI-Fundamentals-Prep](https://YOUR-USERNAME.github.io/AI-Fundamentals-Prep)
-
-*Replace `YOUR-USERNAME` with your actual GitHub username*
+Visit the live website: [https://codess-aus.github.io/AI-Fundamentals-Prep](https://codess-aus.github.io/AI-Fundamentals-Prep)
 
 ## 📖 Contents
 

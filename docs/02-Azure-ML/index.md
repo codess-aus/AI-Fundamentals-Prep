@@ -8,7 +8,7 @@ But building a solid ML solution? That takes planning. The choices data scientis
 
 ## 🔁 The 6-Step ML Flow
 
-![ML Process](/docs/assets/machine-learning-process.png)
+![ML Process](docs/assets/machine-learning-process.png)
 
 > *Note: This is a simplified version — in real life, you’ll loop back and tweak things as you go.*
 
@@ -48,7 +48,7 @@ Before you build anything, you gotta know what you’re solving. This step is al
 
 The type of task you’re doing depends on your data and what kind of output you want. That choice affects which algorithms you can use.
 
-![Tasks](/docs/assets/02-01-overview-tasks.png)
+![Tasks](docs/assets/02-01-overview-tasks.png)
 
 
 ## 🔍 Common ML Tasks
@@ -72,7 +72,7 @@ Let’s say you want to find out if a patient has diabetes. You’ve got health 
 
 That’s a **classification** task because the answer is a category.
 
-![Train Model](/docs/assets/train-model-process.png)
+![Train Model](docs/assets/train-model-process.png)
 
 ## 🛠️ The ML Workflow (Simplified)
 
@@ -132,7 +132,7 @@ You’ll need to **Extract**, **Transform**, and **Load** (ETL) your data into a
 3. 📥 Load it into Azure Blob Storage or another serving layer  
 4. 🧠 Train your model with Azure Machine Learning  
 
-![Data Injestion Pipeline](/docs/assets/data-ingestion-pipeline.png)
+![Data Injestion Pipeline](docs/assets/data-ingestion-pipeline.png)
 
 You can automate this with tools like:
 
@@ -146,7 +146,7 @@ You can automate this with tools like:
 
 You’ve got IoT devices measuring temperature every minute. But you want hourly averages in a clean table.
 
-![json to table](/docs/assets/json-to-table.png)
+![json to table](docs/assets/json-to-table.png)
 
 ### Here's the flow:
 
@@ -253,7 +253,7 @@ No installs. No stress. Just log in and start building models like a boss. 🧑�
 - 🚀 Deploy models for real-time or batch predictions  
 - 📦 Manage models from a full-on model catalog  
 
-![Azure ML](/docs/assets/azure-machine-learning-workspace.png)
+![Azure ML](docs/assets/azure-machine-learning-workspace.png)
 
 ## 🛠️ Set Up Your Workspace
 
