@@ -1,0 +1,46 @@
+# Site settings
+title: AI Fundamentals Prep
+description: A comprehensive guide to AI fundamentals, machine learning, and Azure AI services
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+theme: minima
+
+# GitHub Pages settings
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Navigation
+header_pages:
+  - docs/00-introduction/index.md
+  - docs/01-machinelearning/index.md
+  - docs/02-Azure-ML/index.md
+  - docs/03-genai-intro/index.md
+  - docs/04-genai-azure/index.md
+  - docs/05-intoNLP/index.md
+  - docs/06-NLPAzure/index.md
+  - docs/07-computervision/index.md
+  - docs/08-azurecomputervision/index.md
+  - docs/09-dataextraction/index.md
+  - docs/10-azuredataextraction/index.md
+
+# Collections
+collections:
+  docs:
+    output: true
+    permalink: /:collection/:name/
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
