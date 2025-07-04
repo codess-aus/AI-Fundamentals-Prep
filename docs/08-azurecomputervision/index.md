@@ -169,3 +169,145 @@ Check out the Azure AI Vision docs for the full how-to!
 ## 😃 What’s Next?
 
 Let’s roll into the **Face Service** and see how Azure AI spots and understands faces like a genius! 🧠📷
+
+# 😎 Azure AI Face Service – Let’s Talk Face Magic!
+
+---
+
+## 🧠 What’s Azure AI Face?
+
+It’s like giving your app superhero powers to *see faces* and *know stuff*! 🦸‍♂️📸  
+From unlocking doors to spotting your friends in pics—Face is on it.
+
+---
+
+## 👀 Face Detection – Spot That Face!
+
+Face detection finds faces in pics and draws boxes around them.  
+![Face](https://github.com/codess-aus/AI-Fundamentals-Prep/blob/9f964da3c14e01b86aef9d951b2949edf1649824/docs/assets/face-detection-1.png)
+
+It can even map out facial features like:
+- 👃 Nose  
+- 👁️ Eyes  
+- 👄 Lips  
+- 🧑‍🦱 Eyebrows  
+All the details for next-level analysis!
+
+![Landmarks](https://github.com/codess-aus/AI-Fundamentals-Prep/blob/9f964da3c14e01b86aef9d951b2949edf1649824/docs/assets/landmarks-2.png)
+
+
+## 🧑‍🎓 Face Recognition – Who’s That?
+
+Train it with a few pics of someone, and it’ll recognize them in new ones.  
+![Face recognition](https://github.com/codess-aus/AI-Fundamentals-Prep/blob/9f964da3c14e01b86aef9d951b2949edf1649824/docs/assets/facial-recognition-1.png)
+It’s smart, secure, and super useful—when used responsibly. ✅
+
+---
+
+## 🛠️ What Can Azure AI Face Do?
+
+Here’s the cool stuff it returns when it spots a face:
+
+- 🕶️ **Accessories** – Glasses, hats, masks? It sees them.
+- 🌫️ **Blur** – Is the face fuzzy or crisp?
+- 💡 **Exposure** – Too dark or too bright?
+- 🧭 **Head Pose** – Which way is the face looking?
+- 😷 **Mask** – Mask on or off?
+- 📢 **Noise** – Is the image grainy?
+- 🚧 **Occlusion** – Is something blocking the face?
+- 🎯 **Quality for Recognition** – Is the pic good enough to ID someone?
+
+---
+
+## 🛡️ Responsible AI – Play It Safe
+
+⚠️ Azure AI Face follows Microsoft’s **Responsible AI Standard**.  
+Some features need special access. You’ll need to fill out a form to unlock:
+
+- 🧍‍♂️ **Face Verification** – Compare faces for similarity  
+- 🧑‍💼 **Face Identification** – Spot known people  
+- 🧠 **Liveness Detection** – Check if the video is real or fake
+
+---
+
+## 🚀 What’s Next?
+
+Let’s jump into how to **get started** with Azure AI Vision and build something awesome! 💥
+
+# 🚀 Get Started with Azure AI Foundry – Let’s Build Some Vision Magic!
+
+![AI Foundry](https://github.com/codess-aus/AI-Fundamentals-Prep/blob/6c57058159c78cc440f0b43455f36410b291af64/docs/assets/azure-ai-foundry-portal.png)
+
+## 🧠 What’s Azure AI Vision?
+
+It’s like giving your apps superpowers to *see* and *understand* the world! 🌍👀  
+You can build cool stuff using:
+
+- 🧪 **Azure AI Foundry portal**  
+- 💻 **SDKs or REST APIs**  
+- 🔧 **Azure resources**
+
+---
+
+## 🛠️ Pick Your Power-Up: Resource Types
+
+To use Azure AI Vision, you need to create a resource in your Azure subscription. Choose your fighter:
+
+### 🎯 Azure AI Vision (Solo Mode)
+Just want Vision? Use this to track usage and costs separately.
+
+### 🧠 Azure AI Services (Squad Mode)
+Want to use Vision *plus* other AI tools like Language, Translator, or Custom Vision? This one’s for you!
+
+---
+
+> 💡 **Pro Tip:**  
+You can create resources using a UI or scripts.  
+Use the **Azure AI Foundry portal** if you want to see live examples and test stuff out!
+
+---
+
+## 🧪 What’s Azure AI Foundry?
+
+It’s your all-in-one playground for building AI magic! 🧙‍♂️✨  
+Foundry is built around **hubs** and **projects**:
+
+- 📁 **Projects** = your workspace for datasets, models, and resources  
+- 🧪 Try features with sample images or upload your own  
+- 🧠 Build, test, and launch AI apps like a boss
+
+---
+
+![Vision](https://github.com/codess-aus/AI-Fundamentals-Prep/blob/6c57058159c78cc440f0b43455f36410b291af64/docs/assets/azure-ai-foundry-portal-vision-example.png)
+
+---
+
+## 🎬 What’s Next?
+
+
+# 🧠 Azure AI Vision & Face Service Quiz
+
+---
+
+## 1️⃣ You want to use the Azure AI Vision service to identify the location of individual items in an image. Which of the following features should you retrieve?
+
+- ✅ **Objects**
+- ❌ Visual Tags
+- ❌ Dense Captions
+
+---
+
+## 2️⃣ How does the Face service indicate the location of faces in images?
+
+- ❌ A pair of coordinates for each face, indicating the center of the face  
+- ❌ Two pairs of coordinates for each face, indicating the location of the eyes  
+- ✅ **A set of coordinates for each face, defining a rectangular bounding box around the face**
+
+---
+
+## 3️⃣ Which of the following is a benefit of using the Azure AI Foundry portal for Azure AI Vision?
+
+- ❌ It only supports facial recognition features  
+- ✅ **It provides a user interface with hubs and projects to organize and test AI services**  
+- ❌ It limits access to only one Azure AI service at a time
+
