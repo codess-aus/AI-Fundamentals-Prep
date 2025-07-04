@@ -253,3 +253,31 @@ More dimensions = more powerful understanding.
 ## 🎉 Wrap-Up
 AI doesn’t just read — it understands language using math magic and smart training.
 Pretty awesome, right?
+
+# ✅ Check Your Knowledge
+
+---
+
+### 1️⃣ What is the primary purpose of tokenization in natural language processing (NLP)?
+
+- To translate text into another language  
+- To summarize large documents  
+- To break down text into smaller units for analysis
+
+---
+
+### 2️⃣ Which of the following techniques is used to determine the importance of words in a document within the context of a larger collection of documents?
+
+- Naïve Bayes  
+- TF-IDF (Term Frequency-Inverse Document Frequency)  
+- Word2Vec
+
+---
+
+### 3️⃣ Which of the following best describes the role of embeddings in natural language processing (NLP)?
+
+- They visualize text data in two-dimensional space for easier interpretation  
+- They summarize large text corpora into short, meaningful sentences  
+- They convert language tokens into vectors that capture semantic relationships
+
+
