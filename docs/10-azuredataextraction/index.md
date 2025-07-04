@@ -5,7 +5,7 @@ Whether it’s buried in docs, pics, audio, or other digital stuff — AI’s go
 
 ---
 
-![Documents](https://github.com/codess-aus/AI-Fundamentals-Prep/blob/5304b06c19a40e5330305448b3b2bee5c4d26854/docs/assets/information-extraction.png)
+![Documents](/docs/assets/information-extraction.png)
 
 ---
 
@@ -84,7 +84,7 @@ This service can look at an image and spit out:
 - **Tags**: Keywords to help sort and search the image
 
 ### 📷 Example:  
-![Image](https://github.com/codess-aus/AI-Fundamentals-Prep/blob/f9d9fc4469f5128252910b15f9ac2e568b7e586d/docs/assets/street.png)
+![Image](/docs/assets/street.png)
 **Image**: A man walking a dog in a busy street  
 **Caption**: A man walking a dog on a leash  
 **Dense Captions**:
@@ -101,9 +101,9 @@ This service can look at an image and spit out:
 
 Azure AI Vision can spot and label objects + people in an image.
 
-![Fruit](https://github.com/codess-aus/AI-Fundamentals-Prep/blob/f9d9fc4469f5128252910b15f9ac2e568b7e586d/docs/assets/produce.png)
+![Fruit](/docs/assets/produce.png)
 **Image**: An apple, a banana, and an orange  
-![Fruit](https://github.com/codess-aus/AI-Fundamentals-Prep/blob/f9d9fc4469f5128252910b15f9ac2e568b7e586d/docs/assets/object-detection.png)
+![Fruit](/docs/assets/object-detection.png)
 **Result**: AI highlights each fruit and tells you what’s what 🍎🍌🍊
 
 ---
@@ -118,8 +118,8 @@ Azure AI Vision uses **Optical Character Recognition (OCR)** to:
 - Extract it for translation, search, or storage
 
 ### 📇 Example:  
-![Business Card](https://github.com/codess-aus/AI-Fundamentals-Prep/blob/f9d9fc4469f5128252910b15f9ac2e568b7e586d/docs/assets/business-card.png)
-![Extracted Text](https://github.com/codess-aus/AI-Fundamentals-Prep/blob/f9d9fc4469f5128252910b15f9ac2e568b7e586d/docs/assets/extracted-text.png)
+![Business Card](/docs/assets/business-card.png)
+![Extracted Text](/docs/assets/extracted-text.png)
 
 # 🧠 Extract Multimodal Info with Azure AI Content Understanding
 
@@ -150,8 +150,8 @@ You can set up a schema (aka a blueprint) with fields like:
 - Subtotal, tax, shipping, total
 
 ### 📷 Example:  
-![Invoice](https://github.com/codess-aus/AI-Fundamentals-Prep/blob/3dd7701d22d11f2fb6139c076a84b5c41948a35a/docs/assets/invoice.png)
-![Analysing Invoice](https://github.com/codess-aus/AI-Fundamentals-Prep/blob/3dd7701d22d11f2fb6139c076a84b5c41948a35a/docs/assets/analyzed-invoice.png)
+![Invoice](/docs/assets/invoice.png)
+![Analysing Invoice](/docs/assets/analyzed-invoice.png)
 
 Invoice #: 1234
 Date: 03/07/2025
@@ -204,7 +204,7 @@ You can even analyze pics or vids from meetings to track:
 - Total attendees
 
 ### 📷 Example:  
-![Conference](https://github.com/codess-aus/AI-Fundamentals-Prep/blob/3dd7701d22d11f2fb6139c076a84b5c41948a35a/docs/assets/conference-call.jpg)
+![Conference](/docs/assets/conference-call.jpg)
 **AI Output**:
 Location: Conference Room
 In-person: 1
@@ -254,7 +254,7 @@ Azure AI Document Intelligence has a prebuilt model ready to roll for this.
 - Citizenship  
 - ...and more!
 
-![Loan](https://github.com/codess-aus/AI-Fundamentals-Prep/blob/876d54fa28377eeb55336b1bb0bfc193675134ec/docs/assets/loan-application.png)
+![Loan](/docs/assets/loan-application.png)
 
 ## 🛠️ Creating Custom Models
 
@@ -298,7 +298,7 @@ Some fields come straight from the source (like file names), others are AI-gener
 - 🧠 Azure AI Language → sentiment + named entities  
 - 📄 Azure AI Document Intelligence → field values from forms
 
-![Indexer](https://github.com/codess-aus/AI-Fundamentals-Prep/blob/e053ea85a7038dfd553d4ed280854f78d2ab0695/docs/assets/indexer.png)
+![Indexer](/docs/assets/indexer.png)
 
 ## 🔍 Searchable Index = Smart Results
 
@@ -317,7 +317,7 @@ Besides building a search index, Azure AI Search can save the extracted goodies 
 - Images pulled from docs  
 - JSON docs with complex data structures
 
-![Knowlegde Store](https://github.com/codess-aus/AI-Fundamentals-Prep/blob/e053ea85a7038dfd553d4ed280854f78d2ab0695/docs/assets/knowledge-store.png)
+![Knowlegde Store](/docs/assets/knowledge-store.png)
 
 # 🧠 Azure AI Services Quiz
 

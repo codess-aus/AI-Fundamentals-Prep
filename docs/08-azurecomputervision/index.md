@@ -58,13 +58,13 @@ Azure AI is like a cloud-powered brain 🧠 in the sky ☁️. It helps machines
 - Tags visual features 🏷️
 - Writes captions ✍️
 - Reads text with OCR 🔍
-![Image](https://github.com/codess-aus/AI-Fundamentals-Prep/blob/44ba33d70044dd6a4c3f29d41c11af4ccd4b4203/docs/assets/image-captioning-example.png)
+![Image](/docs/assets/image-captioning-example.png)
 
 ### 😃 Face Service
 - Detects and recognizes faces 👥
 - Analyzes facial features 😎
 - Goes deeper than regular image tools 🔬
-![Face](https://github.com/codess-aus/AI-Fundamentals-Prep/blob/44ba33d70044dd6a4c3f29d41c11af4ccd4b4203/docs/assets/face-detection-example.png)
+![Face](/docs/assets/face-detection-example.png)
 
 ## 💡 Real-World Superpowers
 
@@ -101,7 +101,7 @@ It can look at pics and instantly know what’s going on—no training wheels ne
 
 ### 🗣️ Caption It!
 
-![Skateboard](https://github.com/codess-aus/AI-Fundamentals-Prep/blob/e1267351acff7c9a81a198bd6631ad58759af4af/docs/assets/skateboard.png)
+![Skateboard](/docs/assets/skateboard.png)
 
 It looks at a pic and writes a caption like a pro.  
 **Example:**  
@@ -109,7 +109,7 @@ It looks at a pic and writes a caption like a pro.
 🧠 *Caption:* “A person jumping on a skateboard”  
 Boom. Nailed it.
 
-![Skateboard bounding box](https://github.com/codess-aus/AI-Fundamentals-Prep/blob/e1267351acff7c9a81a198bd6631ad58759af4af/docs/assets/bounding-boxes.png)
+![Skateboard bounding box](/docs/assets/bounding-boxes.png)
 
 ### 🧠 Object Spotting
 It finds stuff in images and tells you how sure it is.  
@@ -128,7 +128,7 @@ It slaps on smart tags so you can search and sort like a boss.
 It reads text in images like a snack label at the store.  
 **Example Output:**  
 
-![OCR](https://github.com/codess-aus/AI-Fundamentals-Prep/blob/e1267351acff7c9a81a198bd6631ad58759af4af/docs/assets/nutrition-label.png)
+![OCR](/docs/assets/nutrition-label.png)
 
 Nutrition Facts
 Serving size: 1 bar (40g)
@@ -148,15 +148,15 @@ Azure AI Vision lets you build custom models using just a few images.
 ### 🍎 Image Classification
 Teach it to tell apples from bananas from oranges.  
 **Example:**  
-- 🍏 Apple  ![Apple](https://github.com/codess-aus/AI-Fundamentals-Prep/blob/e1267351acff7c9a81a198bd6631ad58759af4af/docs/assets/apple.png)
-- 🍌 Banana  ![Banana](https://github.com/codess-aus/AI-Fundamentals-Prep/blob/e1267351acff7c9a81a198bd6631ad58759af4af/docs/assets/banana.png)
-- 🍊 Orange ![Orange](https://github.com/codess-aus/AI-Fundamentals-Prep/blob/e1267351acff7c9a81a198bd6631ad58759af4af/docs/assets/orange.png)
+- 🍏 Apple  ![Apple](/docs/assets/apple.png)
+- 🍌 Banana  ![Banana](/docs/assets/banana.png)
+- 🍊 Orange ![Orange](/docs/assets/orange.png)
 
 ### 🔍 Object Detection
 Train it to find multiple things in one image.  
 **Example:**  
 - Detect all the fruits in a fruit bowl 🥝🍇🍓
-![OD](https://github.com/codess-aus/AI-Fundamentals-Prep/blob/e1267351acff7c9a81a198bd6631ad58759af4af/docs/assets/object-detection.png)
+![OD](/docs/assets/object-detection.png)
 
 ---
 
@@ -184,7 +184,7 @@ From unlocking doors to spotting your friends in pics—Face is on it.
 ## 👀 Face Detection – Spot That Face!
 
 Face detection finds faces in pics and draws boxes around them.  
-![Face](https://github.com/codess-aus/AI-Fundamentals-Prep/blob/9f964da3c14e01b86aef9d951b2949edf1649824/docs/assets/face-detection-1.png)
+![Face](/docs/assets/face-detection-1.png)
 
 It can even map out facial features like:
 - 👃 Nose  
@@ -193,13 +193,13 @@ It can even map out facial features like:
 - 🧑‍🦱 Eyebrows  
 All the details for next-level analysis!
 
-![Landmarks](https://github.com/codess-aus/AI-Fundamentals-Prep/blob/9f964da3c14e01b86aef9d951b2949edf1649824/docs/assets/landmarks-2.png)
+![Landmarks](/docs/assets/landmarks-2.png)
 
 
 ## 🧑‍🎓 Face Recognition – Who’s That?
 
 Train it with a few pics of someone, and it’ll recognize them in new ones.  
-![Face recognition](https://github.com/codess-aus/AI-Fundamentals-Prep/blob/9f964da3c14e01b86aef9d951b2949edf1649824/docs/assets/facial-recognition-1.png)
+![Face recognition](/docs/assets/facial-recognition-1.png)
 It’s smart, secure, and super useful—when used responsibly. ✅
 
 ---
@@ -236,7 +236,7 @@ Let’s jump into how to **get started** with Azure AI Vision and build somethin
 
 # 🚀 Get Started with Azure AI Foundry – Let’s Build Some Vision Magic!
 
-![AI Foundry](https://github.com/codess-aus/AI-Fundamentals-Prep/blob/6c57058159c78cc440f0b43455f36410b291af64/docs/assets/azure-ai-foundry-portal.png)
+![AI Foundry](/docs/assets/azure-ai-foundry-portal.png)
 
 ## 🧠 What’s Azure AI Vision?
 
@@ -278,7 +278,7 @@ Foundry is built around **hubs** and **projects**:
 
 ---
 
-![Vision](https://github.com/codess-aus/AI-Fundamentals-Prep/blob/6c57058159c78cc440f0b43455f36410b291af64/docs/assets/azure-ai-foundry-portal-vision-example.png)
+![Vision](/docs/assets/azure-ai-foundry-portal-vision-example.png)
 
 ---
 

@@ -69,7 +69,7 @@ It uses machine learning models trained on tons of images to spot people, places
 
 Basically, it turns pics into numbers, does some math magic, and boom — it knows what’s in the image. 🧮🔍
 
-![Mail sample](https://github.com/codess-aus/AI-Fundamentals-Prep/blob/80cd9c9433ab6d170afa83b1e4128defdec0016e/docs/assets/sample-mail.jpg)
+![Mail sample](/docs/assets/sample-mail.jpg)
 
 ## ✍️ OCR = AI’s Text Decoder
 
@@ -126,7 +126,7 @@ With document intelligence, they scan a receipt, OCR it, and boom — AI pulls o
 - Items bought + quantity + price  
 - Totals, subtotals, tax
 
-![Receipt](https://github.com/codess-aus/AI-Fundamentals-Prep/blob/7760483d5b3a2cc3b08fac6bc3b1a6a4bcf8b55c/docs/assets/contoso-receipt.png)
+![Receipt](/docs/assets/contoso-receipt.png)
 
 ## 📦 Bounding Boxes FTW
 
@@ -191,7 +191,7 @@ Super clutch for messy, unstructured stuff.
 Multimodal pipelines layer these techniques to extract structured insights and even generate new content.  
 Think of it like stacking tools to build a super-smart content bot. 🧱🤖
 
-![Component Overview](https://github.com/codess-aus/AI-Fundamentals-Prep/blob/f23dfef8d7810d40b0f46295c4c4e26d6c35922d/docs/assets/component-overview.png)
+![Component Overview](/docs/assets/component-overview.png)
 
 Ready to see how it works IRL? Let’s gooo! 🚀
 
@@ -227,7 +227,7 @@ A search index is like a table with:
 - **Data Types** = like string, number, etc.  
 - **Attributes** = for filtering, sorting, etc.
 
-![json](https://github.com/codess-aus/AI-Fundamentals-Prep/blob/2c30fea011ed31b18ce47b92fd6af29293432fd9/docs/assets/json-index-example.png)
+![json](/docs/assets/json-index-example.png)
 
 ## 🧩 Search Solution Components
 

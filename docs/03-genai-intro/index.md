@@ -28,7 +28,7 @@ Say you ask:
 The AI might reply with something like:  
 > Dear Hiring Manager, I am writing to express my interest in the position of...
 
-![copilot](https://github.com/codess-aus/AI-Fundamentals-Prep/blob/e473840d1e1f2a7cbd8ebb521c8d3fb1afea4efa/docs/assets/microsoft-copilot-example-write-letter.png)
+![copilot](/docs/assets/microsoft-copilot-example-write-letter.png)
 
 ---
 
@@ -39,7 +39,7 @@ You could say:
 
 The AI would whip up a fresh image based on your idea.
 
-![Flower](https://github.com/codess-aus/AI-Fundamentals-Prep/blob/e473840d1e1f2a7cbd8ebb521c8d3fb1afea4efa/docs/assets/florist-example.png)
+![Flower](/docs/assets/florist-example.png)
 
 ---
 
@@ -70,7 +70,7 @@ Language models have come a long way! Thanks to natural language processing (NLP
 
 AI doesn’t read like us — it sees numbers. So we turn words into *tokens* (tiny chunks of meaning), then into numbers. Here's the basic flow:
 
-![Tokenization pipeline](https://github.com/codess-aus/AI-Fundamentals-Prep/blob/ab6fa2c1ea526d2ddf57ad1715d9dc6c4d46779c/docs/assets/tokenization-pipeline.png)
+![Tokenization pipeline](/docs/assets/tokenization-pipeline.png)
 
 1. Start with a sentence.
 2. Split it into words (like cutting at spaces).
@@ -85,7 +85,7 @@ Now the AI can spot patterns in the data instead of just following rules.
 
 AI doesn’t just memorize words — it learns how they *connect*. Word embeddings are like maps that show how close words are in meaning.
 
-![Embeddings](https://github.com/codess-aus/AI-Fundamentals-Prep/blob/ab6fa2c1ea526d2ddf57ad1715d9dc6c4d46779c/docs/assets/word-embeddings.png)
+![Embeddings](/docs/assets/word-embeddings.png)
 
 - Words become **vectors** (fancy math lines).
 - Similar words point in the same direction.
@@ -102,12 +102,12 @@ Early models like **RNNs** (Recurrent Neural Networks) helped AI understand word
 Imagine this sentence:  
 **"Vincent Van Gogh was a painter known for [MASK]"**
 
-![Vincent](https://github.com/codess-aus/AI-Fundamentals-Prep/blob/ab6fa2c1ea526d2ddf57ad1715d9dc6c4d46779c/docs/assets/vincent-tokenized.png)
+![Vincent](/docs/assets/vincent-tokenized.png)
 
 The AI reads each word, remembers stuff, and tries to guess the missing word. It might say:  
 **"Starry Night"** 🎨
 
-![Starry Night](https://github.com/codess-aus/AI-Fundamentals-Prep/blob/ab6fa2c1ea526d2ddf57ad1715d9dc6c4d46779c/docs/assets/recurrent-network.gif)
+![Starry Night](/docs/assets/recurrent-network.gif)
 
 But RNNs had a problem: they remembered *everything*, even stuff that didn’t matter. So sometimes the important info got lost in the noise.
 
@@ -130,7 +130,7 @@ Generative AI (like ChatGPT and Copilot) is powered by something called **Transf
 
 ## 🧱 Transformer Basics
 
-![Transformer architecture](https://github.com/codess-aus/AI-Fundamentals-Prep/blob/28514c3e2791374fee445ec934fbf81e18ac3db3/docs/assets/simplified-transformer-architecture.png)
+![Transformer architecture](/docs/assets/simplified-transformer-architecture.png)
 
 Transformers have two main parts:
 
@@ -229,7 +229,7 @@ Pick the one that fits your vibe and your project! 🎨🛠️
 
 ## 💬 Prompts = Your Power Move
 
-![Prompts](https://github.com/codess-aus/AI-Fundamentals-Prep/blob/ae5f28b403495d33f66d628b6a707e7d70467a8b/docs/assets/writing-prompts.png)
+![Prompts](/docs/assets/writing-prompts.png)
 
 Generative AI doesn’t just read your mind (yet 😜). It works best when you give it clear, specific instructions — aka **prompts**.
 

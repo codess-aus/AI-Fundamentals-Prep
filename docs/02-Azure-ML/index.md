@@ -8,7 +8,7 @@ But building a solid ML solution? That takes planning. The choices data scientis
 
 ## 🔁 The 6-Step ML Flow
 
-![ML Process](https://github.com/codess-aus/AI-Fundamentals-Prep/blob/0f898c4c954d821d21370a3a736e3b3257d41f97/docs/assets/machine-learning-process.png)
+![ML Process](/docs/assets/machine-learning-process.png)
 
 > *Note: This is a simplified version — in real life, you’ll loop back and tweak things as you go.*
 
@@ -48,7 +48,7 @@ Before you build anything, you gotta know what you’re solving. This step is al
 
 The type of task you’re doing depends on your data and what kind of output you want. That choice affects which algorithms you can use.
 
-![Tasks](https://github.com/codess-aus/AI-Fundamentals-Prep/blob/3d1254b198ed4951734fc316a0a15675bfe7e12b/docs/assets/02-01-overview-tasks.png)
+![Tasks](/docs/assets/02-01-overview-tasks.png)
 
 
 ## 🔍 Common ML Tasks
@@ -72,7 +72,7 @@ Let’s say you want to find out if a patient has diabetes. You’ve got health 
 
 That’s a **classification** task because the answer is a category.
 
-![Train Model](https://github.com/codess-aus/AI-Fundamentals-Prep/blob/3d1254b198ed4951734fc316a0a15675bfe7e12b/docs/assets/train-model-process.png)
+![Train Model](/docs/assets/train-model-process.png)
 
 ## 🛠️ The ML Workflow (Simplified)
 
@@ -132,7 +132,7 @@ You’ll need to **Extract**, **Transform**, and **Load** (ETL) your data into a
 3. 📥 Load it into Azure Blob Storage or another serving layer  
 4. 🧠 Train your model with Azure Machine Learning  
 
-![Data Injestion Pipeline](https://github.com/codess-aus/AI-Fundamentals-Prep/blob/e62aa89cf7559d652269f61c4c64d9bed5c94b2a/docs/assets/data-ingestion-pipeline.png)
+![Data Injestion Pipeline](/docs/assets/data-ingestion-pipeline.png)
 
 You can automate this with tools like:
 
@@ -146,7 +146,7 @@ You can automate this with tools like:
 
 You’ve got IoT devices measuring temperature every minute. But you want hourly averages in a clean table.
 
-![json to table](https://github.com/codess-aus/AI-Fundamentals-Prep/blob/e62aa89cf7559d652269f61c4c64d9bed5c94b2a/docs/assets/json-to-table.png)
+![json to table](/docs/assets/json-to-table.png)
 
 ### Here's the flow:
 
@@ -253,7 +253,7 @@ No installs. No stress. Just log in and start building models like a boss. 🧑�
 - 🚀 Deploy models for real-time or batch predictions  
 - 📦 Manage models from a full-on model catalog  
 
-![Azure ML](https://github.com/codess-aus/AI-Fundamentals-Prep/blob/7315210522f6b3dd452043e80630416c37b5148d/docs/assets/azure-machine-learning-workspace.png)
+![Azure ML](/docs/assets/azure-machine-learning-workspace.png)
 
 ## 🛠️ Set Up Your Workspace
 

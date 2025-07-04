@@ -298,7 +298,7 @@ But first, you need to **provision a resource** in your Azure subscription. Choo
 - **Azure AI Services Resource**  
   Use this if you’re mixing Language + other Azure AI services and want one bill to rule them all.
 
-![Language](https://github.com/codess-aus/AI-Fundamentals-Prep/blob/fc9d7eee54029bf10cde128b214f189aa17a23e1/docs/assets/ai-foundry-language-1.png)
+![Language](/docs/assets/ai-foundry-language-1.png)
 ---
 
 ## 🖼️ Why Foundry Rocks
@@ -322,8 +322,8 @@ Foundry gives you two playgrounds to test stuff:
 - 🧠 **Language Playground** — Try sentiment analysis, key phrase extraction, and more.
 - 🌍 **Translator Playground** — Test real-time translations across 130+ languages.
 
-![Sentiment](https://github.com/codess-aus/AI-Fundamentals-Prep/blob/fc9d7eee54029bf10cde128b214f189aa17a23e1/docs/assets/ai-foundry-language-sentiment.png)
-![Translator](https://github.com/codess-aus/AI-Fundamentals-Prep/blob/fc9d7eee54029bf10cde128b214f189aa17a23e1/docs/assets/ai-foundry-translator-playground.png)
+![Sentiment](/docs/assets/ai-foundry-language-sentiment.png)
+![Translator](/docs/assets/ai-foundry-translator-playground.png)
 ---
 
 ## 🔜 What’s Next?

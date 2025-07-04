@@ -17,7 +17,7 @@ It’s like giving AI a superpower to find meaning in our words. 💥📚
 
 ## 🔥 6 Cool Things NLP Can Do
 
-![NLP](https://github.com/codess-aus/AI-Fundamentals-Prep/blob/a18c4eda54ec36558627e6c78c6c353a5e702676/docs/assets/natural-language-processing.png)
+![NLP](/docs/assets/natural-language-processing.png)
 
 Here are some epic use cases:
 
@@ -155,12 +155,12 @@ Let’s level up and explore how **deep learning** takes NLP to the next dimensi
 
 Modern AI models are super smart because they understand how words relate to each other. They do this using **embeddings** — fancy math that turns words into **vectors** (a kind of number line in 3D or more dimensions).
 
-![Embeddings](https://github.com/codess-aus/AI-Fundamentals-Prep/blob/b2daca41d9737ee76125c3ba9362ddc90aa889e0/docs/assets/word-embeddings.png)
+![Embeddings](/docs/assets/word-embeddings.png)
 ---
 
 ## 📊 Vectors Explained
 
-![Language Model](https://github.com/codess-aus/AI-Fundamentals-Prep/blob/b2daca41d9737ee76125c3ba9362ddc90aa889e0/docs/assets/language-model.png)
+![Language Model](/docs/assets/language-model.png)
 
 Imagine each word is a rocket flying in space. The direction it flies shows what it *means*. Words that mean similar things fly in the same direction.
 
