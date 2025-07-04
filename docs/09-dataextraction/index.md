@@ -241,6 +241,30 @@ A search index is like a table with:
 | Ranking Engine | Sorts results by relevance, freshness, popularity, or AI vibes |
 | Response Formatter | Makes the results look good for you |
 
+# 🧠 Gen Alpha Quiz: Data Extraction Edition
+
 ---
 
-Ready to mine some knowledge like a pro? Let’s gooo! 🚀
+## 1️⃣ What is the primary role of machine learning in information extraction?
+
+- To store extracted data in a database  
+- To convert structured data into unstructured formats  
+- To transform content into numerical data and predict fields and values
+
+---
+
+## 2️⃣ Which of the following best describes a “field” in the context of data extraction?
+
+- A visual marker used to highlight important text  
+- A key that identifies the type of data being extracted  
+- A storage location for raw content
+
+---
+
+## 3️⃣ How does generative AI enhance the data extraction process?
+
+- By allowing users to define custom fields and generate values from unstructured content  
+- By converting JSON data into images  
+- By generating new documents from scratch
+
+
