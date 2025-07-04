@@ -10,6 +10,8 @@ permalink: /navigation/
 
 Follow this recommended learning path for the best experience:
 
+<div class="course-section">
+
 ### 🎯 Foundation (Start Here)
 1. **[Introduction to AI](../docs/00-introduction/)** 
    - Generative AI basics
@@ -23,6 +25,10 @@ Follow this recommended learning path for the best experience:
    - Azure ML workspace
    - Model deployment
 
+</div>
+
+<div class="course-section">
+
 ### 🚀 Generative AI Track
 4. **[Introduction to Generative AI](../docs/03-genai-intro/)**
    - Generative models
@@ -31,6 +37,10 @@ Follow this recommended learning path for the best experience:
 5. **[Generative AI on Azure](../docs/04-genai-azure/)**
    - Azure OpenAI Service
    - Implementation patterns
+
+</div>
+
+<div class="course-section">
 
 ### 🔤 Natural Language Processing Track
 6. **[Introduction to NLP](../docs/05-intoNLP/)**
@@ -41,6 +51,10 @@ Follow this recommended learning path for the best experience:
    - Azure Cognitive Services
    - Language APIs
 
+</div>
+
+<div class="course-section">
+
 ### 👁️ Computer Vision Track
 8. **[Computer Vision Basics](../docs/07-computervision/)**
    - Image processing
@@ -50,6 +64,10 @@ Follow this recommended learning path for the best experience:
    - Azure AI Vision
    - Custom vision models
 
+</div>
+
+<div class="course-section">
+
 ### 📄 Data Extraction Track
 10. **[Data Extraction Concepts](../docs/09-dataextraction/)**
     - Document processing
@@ -58,6 +76,8 @@ Follow this recommended learning path for the best experience:
 11. **[Azure Data Extraction](../docs/10-azuredataextraction/)**
     - Azure Form Recognizer
     - Document Intelligence
+
+</div>
 
 ---
 
