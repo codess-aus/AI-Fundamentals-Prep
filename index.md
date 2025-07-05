@@ -1,3 +1,4 @@
+<!-- MkDocs deployment -->
 <div class="hero-section">
   <div class="hero-content">
     <h1 class="hero-title">AI Fundamentals Prep 🚀</h1>
