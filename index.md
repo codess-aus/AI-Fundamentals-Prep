@@ -3,7 +3,7 @@
   <div class="hero-content">
     <h1 class="hero-title">AI Fundamentals Prep 🚀</h1>
     <p class="hero-subtitle">Master the fundamentals of artificial intelligence, machine learning, and Azure AI services with our comprehensive, beginner-friendly guide.</p>
-    <a href="00-introduction/index.md" class="hero-cta">Start Your AI Journey</a>
+    <a href="00-introduction/" class="hero-cta">Start Your AI Journey</a>
   </div>
 </div>
 
@@ -12,33 +12,33 @@
 ### 🎯 Foundation Concepts
 Build your understanding with core AI and ML principles, perfect for beginners starting their journey.
 
-- [💡 Introduction to AI](00-introduction/index.md)
-- [🤖 Machine Learning Fundamentals](01-machinelearning/index.md)
-- [☁️ Azure Machine Learning](02-Azure-ML/index.md)
+- [💡 Introduction to AI](00-introduction/)
+- [🤖 Machine Learning Fundamentals](01-machinelearning/)
+- [☁️ Azure Machine Learning](02-Azure-ML/)
 
 ### 🎨 Generative AI
 Dive into the exciting world of generative models and learn to create AI-powered applications.
 
-- [✨ Introduction to Generative AI](03-genai-intro/index.md)
-- [🌐 Generative AI on Azure](04-genai-azure/index.md)
+- [✨ Introduction to Generative AI](03-genai-intro/)
+- [🌐 Generative AI on Azure](04-genai-azure/)
 
 ### 🗣️ Natural Language Processing
 Unlock the power of language understanding and text processing with cutting-edge NLP techniques.
 
-- [📝 Introduction to NLP](05-intoNLP/index.md)
-- [🔤 NLP with Azure](06-NLPAzure/index.md)
+- [📝 Introduction to NLP](05-intoNLP/)
+- [🔤 NLP with Azure](06-NLPAzure/)
 
 ### 👁️ Computer Vision
 Learn how machines see and understand visual content, from basic image processing to advanced recognition.
 
-- [🎯 Computer Vision Basics](07-computervision/index.md)
-- [👀 Azure Computer Vision](08-azurecomputervision/index.md)
+- [🎯 Computer Vision Basics](07-computervision/)
+- [👀 Azure Computer Vision](08-azurecomputervision/)
 
 ### 📄 Data Extraction
 Master document processing and intelligent data extraction from various formats and sources.
 
-- [🔍 Data Extraction Concepts](09-dataextraction/index.md)
-- [📊 Azure Data Extraction](10-azuredataextraction/index.md)
+- [🔍 Data Extraction Concepts](09-dataextraction/)
+- [📊 Azure Data Extraction](10-azuredataextraction/)
 
 ## 🎯 What You'll Achieve
 
@@ -56,7 +56,7 @@ Master document processing and intelligent data extraction from various formats 
 
 ## 🚀 Ready to Begin?
 
-Start with our **[Introduction to AI](00-introduction/index.md)** and progress through each carefully crafted module. Each section builds upon the previous one, ensuring a smooth and comprehensive learning experience.
+Start with our **[Introduction to AI](00-introduction/)** and progress through each carefully crafted module. Each section builds upon the previous one, ensuring a smooth and comprehensive learning experience.
 
 ---
 
