@@ -1,0 +1,118 @@
+site_name: AI Fundamentals Prep
+site_description: A comprehensive guide to AI fundamentals, machine learning, and Azure AI services
+site_author: Codess-Aus
+site_url: https://codess-aus.github.io/AI-Fundamentals-Prep/
+
+# Repository
+repo_name: codess-aus/AI-Fundamentals-Prep
+repo_url: https://github.com/codess-aus/AI-Fundamentals-Prep
+
+# Configuration
+theme:
+  name: material
+  palette:
+    # Palette toggle for automatic mode
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+    
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: deep purple
+      accent: purple
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: deep purple
+      accent: purple
+      toggle:
+        icon: material/brightness-4
+        name: Switch to system preference
+
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.expand
+    - navigation.path
+    - navigation.top
+    - search.highlight
+    - search.share
+    - toc.follow
+    - content.code.copy
+    - content.code.select
+    - content.tabs.link
+
+  icon:
+    repo: fontawesome/brands/github
+
+# Plugins
+plugins:
+  - search
+  - glightbox
+
+# Extensions
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - attr_list
+  - md_in_html
+  - admonition
+  - pymdownx.details
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - tables
+  - footnotes
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+
+# Page tree
+nav:
+  - Home: index.md
+  - Getting Started:
+    - Introduction to AI: 00-introduction/index.md
+    - Machine Learning Fundamentals: 01-machinelearning/index.md
+    - Azure Machine Learning: 02-Azure-ML/index.md
+  - Generative AI:
+    - Introduction to Generative AI: 03-genai-intro/index.md
+    - Generative AI on Azure: 04-genai-azure/index.md
+  - Natural Language Processing:
+    - Introduction to NLP: 05-intoNLP/index.md
+    - NLP with Azure: 06-NLPAzure/index.md
+  - Computer Vision:
+    - Computer Vision Fundamentals: 07-computervision/index.md
+    - Azure Computer Vision: 08-azurecomputervision/index.md
+  - Data Extraction:
+    - Data Extraction Fundamentals: 09-dataextraction/index.md
+    - Azure Data Extraction: 10-azuredataextraction/index.md
+
+# Extra
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/codess-aus
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/codess_aus
+
+# Custom CSS
+extra_css:
+  - stylesheets/extra.css
