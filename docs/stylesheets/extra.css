@@ -388,78 +388,102 @@
 }
 
 /* Hide redundant "Home" text that appears beside hero section */
-.md-content h1:first-of-type {
+/* Target various possible selectors for the page title */
+.md-content__inner h1:first-child,
+.md-typeset h1:first-child,
+.md-content h1:first-of-type,
+article h1:first-child,
+main h1:first-child {
     display: none !important;
 }
 
-/* Alternative approach - hide any h1 that contains only "Home" */
-.md-content h1:contains("Home") {
+/* More specific selector for Material theme */
+.md-typeset .md-content__inner h1:first-child {
+    display: none !important;
+}
+
+/* Hide any h1 that only contains "Home" */
+h1:contains("Home") {
     display: none !important;
 }
 
 /* Style the Table of Contents to match the page design */
+/* Right sidebar TOC styling */
 .md-sidebar--secondary {
-    font-family: var(--md-text-font-family);
+    font-family: var(--md-text-font-family) !important;
 }
 
+.md-sidebar--secondary .md-sidebar__scrollwrap {
+    font-family: var(--md-text-font-family) !important;
+}
+
+/* TOC Title styling */
 .md-nav--secondary .md-nav__title {
-    font-family: var(--md-text-font-family);
-    font-weight: 600;
-    font-size: 0.9rem;
-    color: var(--md-default-fg-color--light);
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-    margin-bottom: 0.5rem;
-    padding: 0.5rem 0.75rem;
-    background: rgba(var(--md-primary-fg-color--rgb), 0.05);
-    border-radius: 6px;
+    font-family: var(--md-text-font-family) !important;
+    font-weight: 600 !important;
+    font-size: 0.9rem !important;
+    color: var(--md-default-fg-color--light) !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.5px !important;
+    margin-bottom: 0.5rem !important;
+    padding: 0.5rem 0.75rem !important;
+    background: rgba(var(--md-primary-fg-color--rgb), 0.05) !important;
+    border-radius: 6px !important;
 }
 
+/* TOC Links styling */
 .md-nav--secondary .md-nav__list {
-    font-family: var(--md-text-font-family);
+    font-family: var(--md-text-font-family) !important;
 }
 
 .md-nav--secondary .md-nav__link {
-    font-family: var(--md-text-font-family);
-    font-size: 0.85rem;
-    font-weight: 400;
-    line-height: 1.4;
-    color: var(--md-default-fg-color--light);
-    padding: 0.25rem 0.75rem;
-    border-radius: 4px;
-    margin: 0.1rem 0;
-    transition: all 0.2s ease;
+    font-family: var(--md-text-font-family) !important;
+    font-size: 0.85rem !important;
+    font-weight: 400 !important;
+    line-height: 1.4 !important;
+    color: var(--md-default-fg-color--light) !important;
+    padding: 0.25rem 0.75rem !important;
+    border-radius: 4px !important;
+    margin: 0.1rem 0 !important;
+    transition: all 0.2s ease !important;
 }
 
 .md-nav--secondary .md-nav__link:hover {
-    background: rgba(var(--md-primary-fg-color--rgb), 0.08);
-    color: var(--md-primary-fg-color);
-    transform: translateX(2px);
+    background: rgba(var(--md-primary-fg-color--rgb), 0.08) !important;
+    color: var(--md-primary-fg-color) !important;
+    transform: translateX(2px) !important;
 }
 
 .md-nav--secondary .md-nav__link--active {
-    background: rgba(var(--md-primary-fg-color--rgb), 0.12);
-    color: var(--md-primary-fg-color);
-    font-weight: 500;
-    border-left: 2px solid var(--md-primary-fg-color);
+    background: rgba(var(--md-primary-fg-color--rgb), 0.12) !important;
+    color: var(--md-primary-fg-color) !important;
+    font-weight: 500 !important;
+    border-left: 2px solid var(--md-primary-fg-color) !important;
 }
 
 /* Improve TOC spacing and hierarchy */
 .md-nav--secondary .md-nav__item .md-nav__item {
-    margin-left: 0.5rem;
+    margin-left: 0.5rem !important;
 }
 
 .md-nav--secondary .md-nav__item .md-nav__item .md-nav__link {
-    font-size: 0.8rem;
-    opacity: 0.9;
+    font-size: 0.8rem !important;
+    opacity: 0.9 !important;
 }
 
-/* Hide the page title if it's just "Home" or similar */
-.md-typeset h1:first-child {
-    display: none !important;
+/* Generic TOC styling that should work regardless of theme structure */
+[data-md-component="toc"] {
+    font-family: var(--md-text-font-family) !important;
 }
 
-/* Alternative selector for the page title */
-article.md-content__inner h1:first-child {
-    display: none !important;
+[data-md-component="toc"] .md-nav__title {
+    font-family: var(--md-text-font-family) !important;
+    font-weight: 600 !important;
+    color: var(--md-primary-fg-color) !important;
+}
+
+[data-md-component="toc"] .md-nav__link {
+    font-family: var(--md-text-font-family) !important;
+    font-size: 0.85rem !important;
+    color: var(--md-default-fg-color--light) !important;
 }
