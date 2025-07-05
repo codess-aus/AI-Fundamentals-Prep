@@ -386,3 +386,80 @@
     border-left: 3px solid var(--md-primary-fg-color);
     font-weight: 600;
 }
+
+/* Hide redundant "Home" text that appears beside hero section */
+.md-content h1:first-of-type {
+    display: none !important;
+}
+
+/* Alternative approach - hide any h1 that contains only "Home" */
+.md-content h1:contains("Home") {
+    display: none !important;
+}
+
+/* Style the Table of Contents to match the page design */
+.md-sidebar--secondary {
+    font-family: var(--md-text-font-family);
+}
+
+.md-nav--secondary .md-nav__title {
+    font-family: var(--md-text-font-family);
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: var(--md-default-fg-color--light);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem 0.75rem;
+    background: rgba(var(--md-primary-fg-color--rgb), 0.05);
+    border-radius: 6px;
+}
+
+.md-nav--secondary .md-nav__list {
+    font-family: var(--md-text-font-family);
+}
+
+.md-nav--secondary .md-nav__link {
+    font-family: var(--md-text-font-family);
+    font-size: 0.85rem;
+    font-weight: 400;
+    line-height: 1.4;
+    color: var(--md-default-fg-color--light);
+    padding: 0.25rem 0.75rem;
+    border-radius: 4px;
+    margin: 0.1rem 0;
+    transition: all 0.2s ease;
+}
+
+.md-nav--secondary .md-nav__link:hover {
+    background: rgba(var(--md-primary-fg-color--rgb), 0.08);
+    color: var(--md-primary-fg-color);
+    transform: translateX(2px);
+}
+
+.md-nav--secondary .md-nav__link--active {
+    background: rgba(var(--md-primary-fg-color--rgb), 0.12);
+    color: var(--md-primary-fg-color);
+    font-weight: 500;
+    border-left: 2px solid var(--md-primary-fg-color);
+}
+
+/* Improve TOC spacing and hierarchy */
+.md-nav--secondary .md-nav__item .md-nav__item {
+    margin-left: 0.5rem;
+}
+
+.md-nav--secondary .md-nav__item .md-nav__item .md-nav__link {
+    font-size: 0.8rem;
+    opacity: 0.9;
+}
+
+/* Hide the page title if it's just "Home" or similar */
+.md-typeset h1:first-child {
+    display: none !important;
+}
+
+/* Alternative selector for the page title */
+article.md-content__inner h1:first-child {
+    display: none !important;
+}
