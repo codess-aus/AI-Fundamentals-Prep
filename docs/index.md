@@ -1,66 +1,63 @@
-# Welcome to AI Fundamentals Prep! 🚀
-
-This comprehensive guide will take you through the fundamentals of artificial intelligence, machine learning, and Azure AI services. Perfect for beginners looking to understand AI concepts and get hands-on experience with Azure AI tools.
-
-## 📚 Course Contents
-
-<div class="course-section">
-
-### Foundation Concepts
-- **[Introduction to AI](00-introduction/index.md)** - Understanding Generative AI and Computer Vision basics
-- **[Machine Learning Fundamentals](01-machinelearning/)** - Core ML concepts and real-world applications  
-- **[Azure Machine Learning](02-Azure-ML/)** - Getting started with Azure ML services
-
+<!-- MkDocs deployment -->
+<div class="hero-section">
+  <div class="hero-content">
+    <h1 class="hero-title">AI Fundamentals Prep 🚀</h1>
+    <p class="hero-subtitle">Master the fundamentals of artificial intelligence, machine learning, and Azure AI services with our comprehensive, beginner-friendly guide.</p>
+    <a href="00-introduction/index.md" class="hero-cta">Start Your AI Journey</a>
+  </div>
 </div>
 
-<div class="course-section">
+## 📚 Course Modules
 
-### Generative AI
-- **[Introduction to Generative AI](03-genai-intro/)** - Understanding generative models and applications
-- **[Generative AI on Azure](04-genai-azure/)** - Implementing generative AI solutions with Azure
+### 🎯 Foundation Concepts
+Build your understanding with core AI and ML principles, perfect for beginners starting their journey.
 
-</div>
+- [💡 Introduction to AI](00-introduction/index.md)
+- [🤖 Machine Learning Fundamentals](01-machinelearning/index.md)
+- [☁️ Azure Machine Learning](02-Azure-ML/index.md)
 
-<div class="course-section">
+### 🎨 Generative AI
+Dive into the exciting world of generative models and learn to create AI-powered applications.
 
-### Natural Language Processing
-- **[Introduction to NLP](05-intoNLP/)** - Text processing and language understanding
-- **[NLP with Azure](06-NLPAzure/)** - Azure Cognitive Services for language
+- [✨ Introduction to Generative AI](03-genai-intro/index.md)
+- [🌐 Generative AI on Azure](04-genai-azure/index.md)
 
-</div>
+### 🗣️ Natural Language Processing
+Unlock the power of language understanding and text processing with cutting-edge NLP techniques.
 
-<div class="course-section">
+- [📝 Introduction to NLP](05-intoNLP/index.md)
+- [🔤 NLP with Azure](06-NLPAzure/index.md)
 
-### Computer Vision
-- **[Computer Vision Basics](07-computervision/)** - Image processing and analysis fundamentals
-- **[Azure Computer Vision](08-azurecomputervision/)** - Azure AI Vision services
+### 👁️ Computer Vision
+Learn how machines see and understand visual content, from basic image processing to advanced recognition.
 
-</div>
+- [🎯 Computer Vision Basics](07-computervision/index.md)
+- [👀 Azure Computer Vision](08-azurecomputervision/index.md)
 
-<div class="course-section">
+### 📄 Data Extraction
+Master document processing and intelligent data extraction from various formats and sources.
 
-### Data Extraction
-- **[Data Extraction Concepts](09-dataextraction/)** - Understanding document and form processing
-- **[Azure Data Extraction](10-azuredataextraction/)** - Azure Form Recognizer and Document Intelligence
+- [🔍 Data Extraction Concepts](09-dataextraction/index.md)
+- [📊 Azure Data Extraction](10-azuredataextraction/index.md)
 
-</div>
-
-## 🎯 Learning Objectives
+## 🎯 What You'll Achieve
 
 <div class="learning-objectives">
-
-By the end of this course, you'll have:
-- A solid understanding of AI and ML fundamentals
-- Hands-on experience with Azure AI services
-- Knowledge of how to implement AI solutions in real-world scenarios
-- Skills to continue your AI learning journey
-
+  <h2>Learning Outcomes</h2>
+  <ul>
+    <li>Master AI and ML fundamentals with confidence</li>
+    <li>Build real-world AI applications using Azure</li>
+    <li>Understand cutting-edge generative AI technologies</li>
+    <li>Implement computer vision and NLP solutions</li>
+    <li>Process and extract insights from documents</li>
+    <li>Gain industry-relevant AI skills</li>
+  </ul>
 </div>
 
-## 🚀 Getting Started
+## 🚀 Ready to Begin?
 
-Start with the [Introduction](00-introduction/index.md) and work your way through each section. Each module builds upon the previous one, so we recommend following the order presented.
+Start with our **[Introduction to AI](00-introduction/index.md)** and progress through each carefully crafted module. Each section builds upon the previous one, ensuring a smooth and comprehensive learning experience.
 
 ---
 
-*Ready to dive into the exciting world of AI? Let's get started!* <span class="emoji">🎉</span>
+*Transform your understanding of AI and unlock new possibilities!* ✨
