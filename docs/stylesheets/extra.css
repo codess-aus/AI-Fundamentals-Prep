@@ -52,32 +52,36 @@
     font-size: 3rem;
     font-weight: 700;
     margin-bottom: 1rem;
-    text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+    color: #ffffff;
+    text-shadow: 0 4px 8px rgba(0,0,0,0.5);
 }
 
 .hero-subtitle {
     font-size: 1.3rem;
     margin-bottom: 2rem;
-    opacity: 0.9;
+    color: #ffffff;
+    opacity: 1;
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.4);
 }
 
 .hero-cta {
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.25);
     backdrop-filter: blur(10px);
-    border: 2px solid rgba(255, 255, 255, 0.3);
-    color: white;
+    border: 2px solid rgba(255, 255, 255, 0.4);
+    color: #ffffff;
     padding: 1rem 2rem;
     border-radius: 50px;
     text-decoration: none;
-    font-weight: 600;
+    font-weight: 700;
     font-size: 1.1rem;
     transition: all 0.3s ease;
     display: inline-block;
     margin-top: 1rem;
     animation: pulse 2s infinite;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.3);
 }
 
 @keyframes pulse {
@@ -87,10 +91,11 @@
 }
 
 .hero-cta:hover {
-    background: rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.35);
     transform: translateY(-2px);
     box-shadow: 0 8px 25px rgba(0,0,0,0.2);
-    color: white;
+    color: #ffffff;
+    border-color: rgba(255, 255, 255, 0.6);
 }
 
 /* Modern Navigation Enhancements */
