@@ -1,12 +1,14 @@
 # 🧠 NLP: How AI Understands Us
 
+![Conversational Workloads](../assets/8.%20Conversational%20Workloads.png)
+
 ## 💬 What’s NLP?
 
 NLP = Natural Language Processing  
 It’s how computers learn to read, listen, and talk like humans. 🤖🗣️  
 Basically, it helps AI understand our words and respond in smart ways.
 
----
+![NLP](../assets/9.%20NLP.png)
 
 ## 🔍 What’s Text Analysis?
 

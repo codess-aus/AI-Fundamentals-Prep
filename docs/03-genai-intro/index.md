@@ -6,7 +6,7 @@ But spoiler alert: it’s not actual magic. It’s math, stats, and a ton of sma
 
 # 🤖 What Is Generative AI?
 
----
+![GenAI](../assets/2.%20GenerativeAI.png)
 
 ## So, what even *is* AI?
 

@@ -1,3 +1,7 @@
+# Artificial Intelligence (AI) is like giving computers superpowers! 🤖✨
+
+![AI Workloads](../assets/1.%20AI%20Workloads.png)
+
 # 💡 What’s the deal with Generative AI?
 Generative AI is like a super-smart digital creator. It can make stuff like:
 
@@ -93,6 +97,9 @@ It’s like giving computers super-eyes 👀 and brains 🧠 so they can read, u
 # 🤖✨ What’s Responsible AI?
 It’s like giving AI a moral compass 🧭 so it plays fair, stays safe, respects privacy, and includes everyone — no shady stuff allowed!
 
+![ResponsibleAI](../assets/10.%20Responsible%20AI%20Notes.png)
+
+
 ## 🧠 Key Values:
 - **Fairness:** AI learns from human-made data, which can be biased 😬. Developers need to check for fairness so the AI doesn’t treat people unfairly.
 - **Safety & Reliability:** AI isn’t perfect — it guesses based on patterns. So apps need backup plans if AI gets it wrong.
@@ -100,6 +107,9 @@ It’s like giving AI a moral compass 🧭 so it plays fair, stays safe, respect
 - **Inclusiveness:** AI should work for everyone — no one left out because of how they speak, look, or live.
 - **Transparency:** AI might feel like magic 🪄, but users should know how it works and what its limits are.
 - **Accountability:** If AI messes up, the people who built it are responsible. There should be rules and checks to keep things ethical.
+ 
+![Responsible AI](../assets/11.%20Responsible%20AI.png)
+
 
 ## 🧩 Real-Life Examples:
 - 🎓 College Admissions AI: Should judge fairly — no bias based on race, gender, or background.

@@ -1,6 +1,8 @@
 # 🤖💡 What’s Machine Learning?
 Machine learning is like when computers learn from data so they can make smart guesses — kind of like how we learn from experience!
 
+![Machine Learning](../assets/3.%20Machine%20Learning.png)
+
 ## 🧠 Who’s Involved?
 It’s a team-up between:
 
@@ -44,6 +46,8 @@ ML is like building a smart calculator that turns **inputs** into **predictions*
 ![Machine Learning](../assets/machine-learning.png)
 
 ## 🧩 Step 1: Training
+
+![Machine Learning](../assets/5.%20Machine%20Learning%20Is.png)
 
 We give the AI a bunch of examples:
 

@@ -1,5 +1,7 @@
 # 👀💡 What’s Computer Vision? Let’s Break It Down
 
+![Computer Vision](../assets/6.%20Computer%20Vision.png)
+
 Computer vision is like giving AI a pair of digital eyes. It helps machines *see* the world and actually *understand* what’s going on. No eyeballs needed—just pixels and brainpower.
 
 ---
@@ -28,6 +30,8 @@ Computer vision is like giving AI a pair of digital eyes. It helps machines *see
 Okay, so computers don’t have eyes like us. But they *do* have the power to process images—whether it’s from a live camera feed or a saved photo/video.
 
 This image-processing skill is the secret sauce behind software that mimics human vision. It’s how AI starts to *see* and *think* visually.
+
+![Computer Vision](../assets/7.%20Computer%20Vision.png)
 
 ---
 

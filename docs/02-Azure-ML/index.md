@@ -1,5 +1,7 @@
 # 🧠 Designing ML Solutions – From Idea to Impact 🚀  
 
+![Azure Machine Learning](../assets/4.%20Azure%20ML.png)
+
 ## 💡 Why It Matters
 
 Machine learning (ML) is the engine behind today’s smartest tech — from Netflix recs to predicting the weather. 🌦️ It turns data into insights and powers everything from chatbots to self-driving cars.
