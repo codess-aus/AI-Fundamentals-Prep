@@ -1,4 +1,31 @@
 <!-- MkDocs deployment -->
+<style>
+/* Hide the automatic page title that shows "Home" */
+.md-content__inner h1:first-child,
+.md-typeset h1:first-child,
+.md-content h1:first-of-type,
+article h1:first-child,
+main h1:first-child,
+.md-content__inner > h1:first-child,
+.md-typeset > h1:first-child {
+    display: none !important;
+    visibility: hidden !important;
+    height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+/* More aggressive hiding */
+h1:contains("Home") {
+    display: none !important;
+}
+
+/* Nuclear option - hide any h1 that's not in our hero section */
+.md-content__inner > h1:not(.hero-title) {
+    display: none !important;
+}
+</style>
+
 <div class="hero-section">
   <div class="hero-content">
     <h1 class="hero-title" style="color: #ffffff !important; text-shadow: 0 4px 8px rgba(0,0,0,0.6) !important;">AI Fundamentals Prep 🚀</h1>
