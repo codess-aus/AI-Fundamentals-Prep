@@ -43,7 +43,7 @@ In this module, we’ll dive into the building blocks of modern computer vision.
 
 Computer vision is like giving AI supercharged digital eyes. It doesn’t just look—it *understands*. Let’s break down the main types of CV powers:
 
----
+![Computer Vision](../assets/13.%20Computer%20Vision.png)
 
 ## 🧠 Core CV Capabilities
 
@@ -267,6 +267,9 @@ CNNs (Convolutional Neural Networks) have been the go-to tech for helping comput
 
 But CNNs can do more than just label stuff. They’re also used in **object detection**, which means spotting **multiple things** in one image and figuring out **where** they are.
 
+![Computer Vision](../assets/15.%20High%20Fidelity%20Bounding%20Box%20Segmentation.gif)
+
+![Computer Vision](../assets/16.%20Combo%20Multi%20Model%20Types.gif)
 ---
 
 ## 🤖 Transformers: From Text to Vision
@@ -294,7 +297,7 @@ They’re trained on **captioned images** (like a pic of a dog with the caption 
 - A **language encoder** turns the caption into numbers.
 - The model learns how they match up.
 
----
+![vidio](../assets/18.%20generative%20video.gif)
 
 ## 🏗️ Foundation Models: Build Once, Use Everywhere
 

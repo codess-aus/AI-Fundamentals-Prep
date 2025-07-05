@@ -2,6 +2,8 @@
 
 Today’s orgs are vibing with all kinds of content — think docs, vids, audio, pics, and text. One of the big brain moves they make? Pulling out the good stuff and saving it in databases. 💾
 
+![Doc Intel](../assets/12.%20Document%20Intelligence.png)
+
 ## 🚀 Real-World Scenarios
 
 - 🏭 **Factory Feels**  
