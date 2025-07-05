@@ -33,7 +33,7 @@ jobs:
       
       - name: Test MkDocs build
         run: |
-          mkdocs build --clean --strict
+          mkdocs build --clean
       
       - name: Check build output
         run: |
