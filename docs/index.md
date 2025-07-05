@@ -7,7 +7,7 @@ This comprehensive guide will take you through the fundamentals of artificial in
 <div class="course-section">
 
 ### Foundation Concepts
-- **[Introduction to AI](00-introduction/)** - Understanding Generative AI and Computer Vision basics
+- **[Introduction to AI](00-introduction/index.md)** - Understanding Generative AI and Computer Vision basics
 - **[Machine Learning Fundamentals](01-machinelearning/)** - Core ML concepts and real-world applications  
 - **[Azure Machine Learning](02-Azure-ML/)** - Getting started with Azure ML services
 
@@ -59,7 +59,7 @@ By the end of this course, you'll have:
 
 ## 🚀 Getting Started
 
-Start with the [Introduction](00-introduction/) and work your way through each section. Each module builds upon the previous one, so we recommend following the order presented.
+Start with the [Introduction](00-introduction/index.md) and work your way through each section. Each module builds upon the previous one, so we recommend following the order presented.
 
 ---
 
