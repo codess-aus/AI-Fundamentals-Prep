@@ -56,6 +56,15 @@
     text-shadow: 0 4px 8px rgba(0,0,0,0.5);
 }
 
+/* Force bright white text in hero section - highest specificity */
+.hero-section .hero-content .hero-title,
+.hero-section .hero-title,
+.md-typeset .hero-section .hero-title {
+    color: #ffffff !important;
+    text-shadow: 0 4px 8px rgba(0,0,0,0.6) !important;
+    font-weight: 700 !important;
+}
+
 .hero-subtitle {
     font-size: 1.3rem;
     margin-bottom: 2rem;
@@ -65,6 +74,15 @@
     margin-left: auto;
     margin-right: auto;
     text-shadow: 0 2px 4px rgba(0,0,0,0.4);
+}
+
+/* Force bright white text in hero section - highest specificity */
+.hero-section .hero-content .hero-subtitle,
+.hero-section .hero-subtitle,
+.md-typeset .hero-section .hero-subtitle {
+    color: #ffffff !important;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.5) !important;
+    opacity: 1 !important;
 }
 
 .hero-cta {
@@ -82,6 +100,17 @@
     margin-top: 1rem;
     animation: pulse 2s infinite;
     text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+/* Force bright white text in hero section - highest specificity */
+.hero-section .hero-content .hero-cta,
+.hero-section .hero-cta,
+.md-typeset .hero-section .hero-cta {
+    color: #ffffff !important;
+    font-weight: 700 !important;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.4) !important;
+    background: rgba(255, 255, 255, 0.25) !important;
+    border: 2px solid rgba(255, 255, 255, 0.4) !important;
 }
 
 @keyframes pulse {

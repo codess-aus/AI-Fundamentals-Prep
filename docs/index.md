@@ -1,9 +1,9 @@
 <!-- MkDocs deployment -->
 <div class="hero-section">
   <div class="hero-content">
-    <h1 class="hero-title">AI Fundamentals Prep 🚀</h1>
-    <p class="hero-subtitle">Master the fundamentals of artificial intelligence, machine learning, and Azure AI services with our comprehensive, beginner-friendly guide.</p>
-    <a href="00-introduction/" class="hero-cta">Start Your AI Journey</a>
+    <h1 class="hero-title" style="color: #ffffff !important; text-shadow: 0 4px 8px rgba(0,0,0,0.6) !important;">AI Fundamentals Prep 🚀</h1>
+    <p class="hero-subtitle" style="color: #ffffff !important; text-shadow: 0 2px 4px rgba(0,0,0,0.5) !important; opacity: 1 !important;">Master the fundamentals of artificial intelligence, machine learning, and Azure AI services with our comprehensive, beginner-friendly guide.</p>
+    <a href="00-introduction/" class="hero-cta" style="color: #ffffff !important; font-weight: 700 !important; text-shadow: 0 2px 4px rgba(0,0,0,0.4) !important;">Start Your AI Journey</a>
   </div>
 </div>
 
