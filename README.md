@@ -24,9 +24,27 @@ Visit the GitHub Pages website (link above) for the best reading experience.
 
 ### Option 2: Local Development
 1. Clone this repository
-2. Install Jekyll (if you want to run locally)
-3. Run `bundle exec jekyll serve`
-4. Visit `http://localhost:4000`
+   ```bash
+   git clone https://github.com/codess-aus/AI-Fundamentals-Prep.git
+   cd AI-Fundamentals-Prep
+   ```
+
+2. Install Python dependencies
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+3. Serve the documentation locally
+   ```bash
+   mkdocs serve
+   ```
+
+4. Visit `http://localhost:8000` to view the site
+
+### Building for Production
+```bash
+mkdocs build
+```
 
 ## 📁 Repository Structure
 
@@ -43,15 +61,20 @@ Visit the GitHub Pages website (link above) for the best reading experience.
 │   ├── 08-azurecomputervision/ # Azure vision services
 │   ├── 09-dataextraction/   # Data extraction concepts
 │   ├── 10-azuredataextraction/ # Azure document intelligence
-│   └── assets/              # Images and resources
-├── _config.yml              # Jekyll configuration
-└── index.md                 # Homepage
+│   ├── assets/              # Images and resources
+│   └── stylesheets/         # Custom CSS
+├── .github/workflows/       # GitHub Actions for deployment
+├── mkdocs.yml              # MkDocs configuration
+├── requirements.txt        # Python dependencies
+└── index.md               # Homepage
 ```
 
 ## 🛠️ Built With
 
-- **Jekyll** - Static site generator
+- **MkDocs** - Modern static site generator
+- **Material for MkDocs** - Beautiful theme with advanced features
 - **GitHub Pages** - Hosting
+- **GitHub Actions** - Automated deployment
 - **Markdown** - Content format
 
 ## 📄 License

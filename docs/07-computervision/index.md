@@ -101,7 +101,7 @@ Here’s how a color image is built using RGB channels:
 
 Here's what it looks like:
 
-![Colour Square](docs/assets/color-square.png)
+![Colour Square](../assets/color-square.png)
 
 ## 🎨 Color Combos
 
@@ -162,7 +162,7 @@ So far, our new image looks like this:
 -255  -510
 We keep sliding the filter across the image until we’ve covered it all!
 
-![Filter](docs/assets/filter.gif)
+![Filter](../assets/filter.gif)
 
 ## 🧠 What’s Happening?
 The filter highlights edges in the image.
@@ -170,8 +170,8 @@ Some values might go below 0 or above 255, so we adjust them to stay in range.
 The edges of the image don’t get calculated, so we pad them with 0s.
 
 ## 🍌 Real Example
-![Original Image](docs/assets/banana-grayscale.png)
-![Filtered Image](docs/assets/laplace.png)
+![Original Image](../assets/banana-grayscale.png)
+![Filtered Image](../assets/laplace.png)
 Banana photo	Banana with edges highlighted
 This is called convolutional filtering—because the filter is convolved (slid and calculated) across the image.
 
@@ -211,7 +211,7 @@ You train a CNN with lots of fruit pics—apples, bananas, oranges.
 Then, when you show it a new fruit pic, it says:  
 > “Hey, that’s a banana!” 🍌
 
-![Convolutional](docs/assets/convolutional-neural-network.png)
+![Convolutional](../assets/convolutional-neural-network.png)
 
 ## 🛠️ How CNNs Learn
 
@@ -268,7 +268,7 @@ But CNNs can do more than just label stuff. They’re also used in **object dete
 ## 🤖 Transformers: From Text to Vision
 While CNNs ruled vision, **transformers** were crushing it in **language** (like chatbots and translation). Transformers read tons of text and turn words into **vectors**—basically, numbers that represent meaning.
 
-![Language encoder](docs/assets/language-encoder.png)
+![Language encoder](../assets/language-encoder.png)
 
 ### 🧠 Word Vibes in 3D
 Imagine words floating in 3D space. Words that mean similar things (like “cat” and “kitten”) are close together. That’s how transformers understand language.
@@ -283,7 +283,7 @@ Now imagine combining **image understanding** with **language understanding**. T
 
 They’re trained on **captioned images** (like a pic of a dog with the caption “cute puppy”). These models learn how **pixels** and **words** connect.
 
-!Multi Modal](/docs/assets/multi-modal-model.png)
+!Multi Modal](/../assets/multi-modal-model.png)
 
 ### 🧠 How It Works:
 - An **image encoder** turns the picture into numbers.
@@ -303,7 +303,7 @@ You can build different tools on top of them, like:
 - 📝 **Captioning** – Describe this image in words.
 - 🏷️ **Tagging** – Add relevant keywords to the image.
 
-![Florence](docs/assets/florence-model.png)
+![Florence](../assets/florence-model.png)
 ---
 
 ## 🚀 Why It Matters

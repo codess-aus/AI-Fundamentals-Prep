@@ -5,7 +5,7 @@ Whether it’s buried in docs, pics, audio, or other digital stuff — AI’s go
 
 ---
 
-![Documents](docs/assets/information-extraction.png)
+![Documents](../assets/information-extraction.png)
 
 ---
 
@@ -84,7 +84,7 @@ This service can look at an image and spit out:
 - **Tags**: Keywords to help sort and search the image
 
 ### 📷 Example:  
-![Image](docs/assets/street.png)
+![Image](../assets/street.png)
 **Image**: A man walking a dog in a busy street  
 **Caption**: A man walking a dog on a leash  
 **Dense Captions**:
@@ -101,9 +101,9 @@ This service can look at an image and spit out:
 
 Azure AI Vision can spot and label objects + people in an image.
 
-![Fruit](docs/assets/produce.png)
+![Fruit](../assets/produce.png)
 **Image**: An apple, a banana, and an orange  
-![Fruit](docs/assets/object-detection.png)
+![Fruit](../assets/object-detection.png)
 **Result**: AI highlights each fruit and tells you what’s what 🍎🍌🍊
 
 ---
@@ -118,8 +118,8 @@ Azure AI Vision uses **Optical Character Recognition (OCR)** to:
 - Extract it for translation, search, or storage
 
 ### 📇 Example:  
-![Business Card](docs/assets/business-card.png)
-![Extracted Text](docs/assets/extracted-text.png)
+![Business Card](../assets/business-card.png)
+![Extracted Text](../assets/extracted-text.png)
 
 # 🧠 Extract Multimodal Info with Azure AI Content Understanding
 
@@ -150,8 +150,8 @@ You can set up a schema (aka a blueprint) with fields like:
 - Subtotal, tax, shipping, total
 
 ### 📷 Example:  
-![Invoice](docs/assets/invoice.png)
-![Analysing Invoice](docs/assets/analyzed-invoice.png)
+![Invoice](../assets/invoice.png)
+![Analysing Invoice](../assets/analyzed-invoice.png)
 
 Invoice #: 1234
 Date: 03/07/2025
@@ -204,7 +204,7 @@ You can even analyze pics or vids from meetings to track:
 - Total attendees
 
 ### 📷 Example:  
-![Conference](docs/assets/conference-call.jpg)
+![Conference](../assets/conference-call.jpg)
 **AI Output**:
 Location: Conference Room
 In-person: 1
@@ -254,7 +254,7 @@ Azure AI Document Intelligence has a prebuilt model ready to roll for this.
 - Citizenship  
 - ...and more!
 
-![Loan](docs/assets/loan-application.png)
+![Loan](../assets/loan-application.png)
 
 ## 🛠️ Creating Custom Models
 
@@ -298,7 +298,7 @@ Some fields come straight from the source (like file names), others are AI-gener
 - 🧠 Azure AI Language → sentiment + named entities  
 - 📄 Azure AI Document Intelligence → field values from forms
 
-![Indexer](docs/assets/indexer.png)
+![Indexer](../assets/indexer.png)
 
 ## 🔍 Searchable Index = Smart Results
 
@@ -317,7 +317,7 @@ Besides building a search index, Azure AI Search can save the extracted goodies 
 - Images pulled from docs  
 - JSON docs with complex data structures
 
-![Knowlegde Store](docs/assets/knowledge-store.png)
+![Knowlegde Store](../assets/knowledge-store.png)
 
 # 🧠 Azure AI Services Quiz
 

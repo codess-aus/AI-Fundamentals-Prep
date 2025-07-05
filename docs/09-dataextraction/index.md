@@ -69,7 +69,7 @@ It uses machine learning models trained on tons of images to spot people, places
 
 Basically, it turns pics into numbers, does some math magic, and boom — it knows what’s in the image. 🧮🔍
 
-![Mail sample](docs/assets/sample-mail.jpg)
+![Mail sample](../assets/sample-mail.jpg)
 
 ## ✍️ OCR = AI’s Text Decoder
 
@@ -126,7 +126,7 @@ With document intelligence, they scan a receipt, OCR it, and boom — AI pulls o
 - Items bought + quantity + price  
 - Totals, subtotals, tax
 
-![Receipt](docs/assets/contoso-receipt.png)
+![Receipt](../assets/contoso-receipt.png)
 
 ## 📦 Bounding Boxes FTW
 
@@ -191,7 +191,7 @@ Super clutch for messy, unstructured stuff.
 Multimodal pipelines layer these techniques to extract structured insights and even generate new content.  
 Think of it like stacking tools to build a super-smart content bot. 🧱🤖
 
-![Component Overview](docs/assets/component-overview.png)
+![Component Overview](../assets/component-overview.png)
 
 Ready to see how it works IRL? Let’s gooo! 🚀
 
@@ -227,7 +227,7 @@ A search index is like a table with:
 - **Data Types** = like string, number, etc.  
 - **Attributes** = for filtering, sorting, etc.
 
-![json](docs/assets/json-index-example.png)
+![json](../assets/json-index-example.png)
 
 ## 🧩 Search Solution Components
 
