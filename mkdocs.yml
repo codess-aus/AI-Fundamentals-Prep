@@ -111,7 +111,9 @@ extra:
     - icon: fontawesome/brands/github
       link: https://github.com/codess-aus
     - icon: fontawesome/brands/twitter
-      link: https://twitter.com/codess_aus
+      link: https://bsky.app/profile/codess-aus.bsky.social
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/michellesandford
 
 # Custom CSS
 extra_css:
