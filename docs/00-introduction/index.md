@@ -43,7 +43,7 @@ Computer vision is like giving superpowers to computers so they can see and unde
 - 😎 Face unlock on your phone
 - 🤖 Robots and self-driving cars that see the world around them
 
-<video src="../assets/20250325-002500-sora.mp4" controls style="max-width: 100%; height: auto;">
+<video src="../assets/20250325-002500-sora.mp4" controls autoplay loop muted playsinline style="max-width: 100%; height: auto;">
   Your browser does not support the video tag.
 </video>
 
