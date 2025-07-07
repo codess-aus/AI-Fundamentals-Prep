@@ -43,7 +43,9 @@ Computer vision is like giving superpowers to computers so they can see and unde
 - 😎 Face unlock on your phone
 - 🤖 Robots and self-driving cars that see the world around them
 
-[Anomoly Detection](../assets/14.%20Anomaly%20Detection.gif)
+<video src="../assets/20250325-002500-sora.mp4" controls style="max-width: 100%; height: auto;">
+  Your browser does not support the video tag.
+</video>
 
 # 🗣️ What’s AI Speech All About?
 AI speech is like giving computers ears 👂 and a voice 🗣️ so they can listen, talk, and understand just like people do!
