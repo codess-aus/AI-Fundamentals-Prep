@@ -323,7 +323,7 @@ Multi-modal models are the **future of AI**. They’re helping us build smarter 
 ## 1. What kind of values does computer vision analyze in an image?
 
 - [ ] Timestamps in photograph metadata  
-- [x] Pixels  
+- [ ] Pixels  
 - [ ] Image file names  
 
 ---
@@ -331,7 +331,7 @@ Multi-modal models are the **future of AI**. They’re helping us build smarter 
 ## 2. What is the primary role of filters in a convolutional neural network (CNN) used for image classification?
 
 - [ ] To apply visual effects to enhance image appearance  
-- [x] To extract numeric features from images for use in a neural network  
+- [ ] To extract numeric features from images for use in a neural network  
 - [ ] To compress image size for faster processing  
 
 ---
@@ -340,6 +340,6 @@ Multi-modal models are the **future of AI**. They’re helping us build smarter 
 
 - [ ] To generate random captions for unlabeled images  
 - [ ] To replace CNNs entirely in all vision tasks  
-- [x] To combine image features with natural language embeddings for richer understanding  
+- [ ] To combine image features with natural language embeddings for richer understanding  
 
 
