@@ -95,18 +95,18 @@ nav:
   - Generative AI:
     - Introduction to Generative AI: 03-genai-intro/index.md
     - Generative AI on Azure: 04-genai-azure/index.md
-  - Natural Language Processing:
+  - Natural Language Processing & Speech:
     - Introduction to NLP: 05-intoNLP/index.md
     - NLP with Azure: 06-NLPAzure/index.md
     - Speech Services: 06-speech/index.md
   - Computer Vision:
-    - Computer Vision: 07-computervision/index.md
+    - Introduction to Computer Vision: 07-computervision/index.md
     - Azure Computer Vision: 08-azurecomputervision/index.md
   - Document Intelligence:
-    - Data Extraction: 09-dataextraction/index.md
+    - Introduction to Data Extraction: 09-dataextraction/index.md
     - Azure Data Extraction: 10-azuredataextraction/index.md
-  - Resources:
-    - Additional Resources: 11-resources/index.md
+  - Resources & Exam Guide:
+    - Resources & Skills Overview: 11-resources/index.md
 
 # Extra
 extra:
