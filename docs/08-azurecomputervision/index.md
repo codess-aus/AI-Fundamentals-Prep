@@ -301,13 +301,13 @@ Foundry is built around **hubs** and **projects**:
 
 - [ ] A pair of coordinates for each face, indicating the center of the face  
 - [ ] Two pairs of coordinates for each face, indicating the location of the eyes  
-- [ ] **A set of coordinates for each face, defining a rectangular bounding box around the face**
+- [ ] A set of coordinates for each face, defining a rectangular bounding box around the face
 
 ---
 
 ## 3️⃣ Which of the following is a benefit of using the Azure AI Foundry portal for Azure AI Vision?
 
 - [ ] It only supports facial recognition features  
-- [ ] **It provides a user interface with hubs and projects to organize and test AI services**  
+- [ ] It provides a user interface with hubs and projects to organize and test AI services
 - [ ] It limits access to only one Azure AI service at a time
 
