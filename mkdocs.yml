@@ -98,12 +98,15 @@ nav:
   - Natural Language Processing:
     - Introduction to NLP: 05-intoNLP/index.md
     - NLP with Azure: 06-NLPAzure/index.md
+    - Speech Services: 06-speech/index.md
   - Computer Vision:
-    - Computer Vision Fundamentals: 07-computervision/index.md
+    - Computer Vision: 07-computervision/index.md
     - Azure Computer Vision: 08-azurecomputervision/index.md
-  - Data Extraction:
-    - Data Extraction Fundamentals: 09-dataextraction/index.md
+  - Document Intelligence:
+    - Data Extraction: 09-dataextraction/index.md
     - Azure Data Extraction: 10-azuredataextraction/index.md
+  - Resources:
+    - Additional Resources: 11-resources/index.md
 
 # Extra
 extra:
