@@ -1,0 +1,2245 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="A comprehensive guide to AI fundamentals, machine learning, and Azure AI services">
+      
+      
+        <meta name="author" content="Codess-Aus">
+      
+      
+        <link rel="canonical" href="https://codess-aus.github.io/AI-Fundamentals-Prep/01-machinelearning/">
+      
+      
+        <link rel="prev" href="../00-introduction/">
+      
+      
+        <link rel="next" href="../02-Azure-ML/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.15">
+    
+    
+      
+        <title>Machine Learning Fundamentals - AI Fundamentals Prep</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.342714a4.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+   <link href="../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../assets/javascripts/glightbox.min.js"></script></head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#whats-machine-learning" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="AI Fundamentals Prep" class="md-header__button md-logo" aria-label="AI Fundamentals Prep" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            AI Fundamentals Prep
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Machine Learning Fundamentals
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.3 16-.7-2h-3.2l-.7 2H7.8L11 7h2l3.2 9zM20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12zm-9.15 3.96h2.3L12 9z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="deep-purple" data-md-color-accent="purple"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="deep-purple" data-md-color-accent="purple"  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/codess-aus/AI-Fundamentals-Prep" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    codess-aus/AI-Fundamentals-Prep
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../00-introduction/" class="md-tabs__link">
+          
+  
+  
+  Introduction
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
+          
+  
+  
+  Machine Learning
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../03-genai-intro/" class="md-tabs__link">
+          
+  
+  
+  Generative AI
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../05-intoNLP/" class="md-tabs__link">
+          
+  
+  
+  Natural Language Processing & Speech
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../07-computervision/" class="md-tabs__link">
+          
+  
+  
+  Computer Vision
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../09-dataextraction/" class="md-tabs__link">
+          
+  
+  
+  Document Intelligence
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../11-resources/" class="md-tabs__link">
+          
+  
+  
+  Resources & Exam Guide
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="AI Fundamentals Prep" class="md-nav__button md-logo" aria-label="AI Fundamentals Prep" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    AI Fundamentals Prep
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/codess-aus/AI-Fundamentals-Prep" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    codess-aus/AI-Fundamentals-Prep
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Introduction
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Introduction
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../00-introduction/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Introduction to AI
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Machine Learning
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Machine Learning
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Machine Learning Fundamentals
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Machine Learning Fundamentals
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#whos-involved" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧠 Who’s Involved?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-it-works" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔁 How It Works:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#where-it-comes-from" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧠 Where It Comes From
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#real-life-examples" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔍 Real-Life Examples
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02-Azure-ML/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Azure Machine Learning
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Generative AI
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Generative AI
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03-genai-intro/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Introduction to Generative AI
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04-genai-azure/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Generative AI on Azure
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Natural Language Processing & Speech
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Natural Language Processing & Speech
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../05-intoNLP/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Introduction to NLP
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../06-NLPAzure/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    NLP with Azure
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../06-speech/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Speech Services
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Computer Vision
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Computer Vision
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../07-computervision/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Introduction to Computer Vision
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../08-azurecomputervision/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Azure Computer Vision
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Document Intelligence
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            Document Intelligence
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../09-dataextraction/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Introduction to Data Extraction
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../10-azuredataextraction/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Azure Data Extraction
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Resources & Exam Guide
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            Resources & Exam Guide
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../11-resources/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Resources & Skills Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../12-Sample-Questions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Sample Questions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#whos-involved" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧠 Who’s Involved?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-it-works" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔁 How It Works:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#where-it-comes-from" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧠 Where It Comes From
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#real-life-examples" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔍 Real-Life Examples
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="whats-machine-learning">🤖💡 What’s Machine Learning?</h1>
+<p>Machine learning is like when computers learn from data so they can make smart guesses — kind of like how we learn from experience!</p>
+<p><a class="glightbox" href="../assets/3.%20Machine%20Learning.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Machine Learning" src="../assets/3.%20Machine%20Learning.png" /></a></p>
+<h2 id="whos-involved">🧠 Who’s Involved?</h2>
+<p>It’s a team-up between:</p>
+<ul>
+<li><strong>Data Scientists 🧪:</strong> They explore and clean up the data, then train the AI to recognize patterns.</li>
+<li><strong>Software Developers 💻:</strong> They take that trained AI and plug it into apps so it can make predictions in real life!</li>
+</ul>
+<h2 id="how-it-works">🔁 How It Works:</h2>
+<ul>
+<li>Feed the AI lots of data 🍕📊</li>
+<li>Train it to spot patterns 🧠</li>
+<li>Use it in apps to make smart predictions — like guessing what you’ll type next or spotting a cat in a photo 🐱</li>
+</ul>
+<p>This last step is called <strong>inferencing</strong> — it’s when the AI uses what it learned to make real-time decisions!</p>
+<hr />
+<h2 id="where-it-comes-from">🧠 Where It Comes From</h2>
+<p>ML started with <strong>math and stats</strong> — using numbers and patterns to figure things out.<br />
+The big idea? Use past data to guess what might happen next!</p>
+<hr />
+<h2 id="real-life-examples">🔍 Real-Life Examples</h2>
+<ul>
+<li>
+<p>🍦 <strong>Ice Cream Shop</strong><br />
+  An app looks at past sales + weather to guess how many ice creams will sell today.</p>
+</li>
+<li>
+<p>🩺 <strong>Doctor’s Tool</strong><br />
+  AI checks patient data to predict if someone might be at risk for diabetes.</p>
+</li>
+<li>
+<p>🐧 <strong>Penguin Research</strong><br />
+  AI uses bird measurements to figure out which species it is — Adelie, Gentoo, or Chinstrap!</p>
+</li>
+</ul>
+<hr />
+<h1 id="how-machine-learning-works">🧪 How Machine Learning Works</h1>
+<p>ML is like building a smart calculator that turns <strong>inputs</strong> into <strong>predictions</strong>.</p>
+<hr />
+<p><a class="glightbox" href="../assets/machine-learning.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Machine Learning" src="../assets/machine-learning.png" /></a></p>
+<h2 id="step-1-training">🧩 Step 1: Training</h2>
+<p><a class="glightbox" href="../assets/5.%20Machine%20Learning%20Is.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Machine Learning" src="../assets/5.%20Machine%20Learning%20Is.png" /></a></p>
+<p>We give the AI a bunch of examples:</p>
+<ul>
+<li><strong>Features (x)</strong> = the stuff we know (like weather, weight, flipper size)  </li>
+<li><strong>Label (y)</strong> = the thing we want to predict (like sales, risk level, penguin type)</li>
+</ul>
+<p>Example:</p>
+<p>x = [temperature, rainfall, windspeed]
+y = ice cream sales</p>
+<p>The AI learns a function — let’s call it <strong>f</strong> — that connects x to y:
+y = f(x)</p>
+<hr />
+<h2 id="step-2-inferencing">🔮 Step 2: Inferencing</h2>
+<p>Once trained, the AI can take <em>new</em> x values and guess y — this guess is called <strong>ŷ</strong> (aka “y-hat” 🎩).</p>
+<p>Example:
+ŷ = 120 ice creams 🍦</p>
+<hr />
+<h2 id="summary">💡 Summary</h2>
+<ul>
+<li><strong>Machine Learning</strong> = Smart guessing powered by data + math  </li>
+<li>It learns patterns, builds a function, and makes predictions — all inside your apps!</li>
+</ul>
+<hr />
+<h1 id="types-of-machine-learning">🧠 Types of Machine Learning</h1>
+<p>Machine learning comes in different styles — like different game modes 🎮. You pick the one that fits what you're trying to predict!</p>
+<p><a class="glightbox" href="../assets/machine-learning-types.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Machine Learning Types" src="../assets/machine-learning-types.png" /></a></p>
+<hr />
+<h2 id="supervised-learning">🎓 Supervised Learning</h2>
+<p>This is when the AI learns from examples that include both:
+- <strong>Features (x)</strong> = the stuff we know
+- <strong>Labels (y)</strong> = the answer we want it to learn</p>
+<h3 id="regression">🔢 Regression</h3>
+<p>Predicts a <strong>number</strong> — like how many ice creams will sell or how fast a car goes.</p>
+<p>Examples:
+- 🍦 Ice cream sales based on weather
+- 🏠 House price based on size and location
+- 🚗 Car fuel efficiency based on engine size and weight</p>
+<h3 id="classification">🧪 Classification</h3>
+<p>Predicts a <strong>category</strong> — like yes/no or which type of penguin 🐧.</p>
+<h4 id="binary-classification">✅ Binary Classification</h4>
+<p>Only <strong>two options</strong> — like true/false or yes/no.</p>
+<p>Examples:
+- 🩺 Is a patient at risk for diabetes?
+- 💳 Will a customer default on a loan?
+- 📬 Will someone respond to a marketing email?</p>
+<h4 id="multiclass-classification">🎯 Multiclass Classification</h4>
+<p>More than <strong>two categories</strong>, but only one correct answer.</p>
+<p>Examples:
+- 🐧 Penguin species: Adelie, Gentoo, or Chinstrap
+- 🎬 Movie genre: Comedy, Horror, Romance, etc.</p>
+<h4 id="multilabel-classification">🏷️ Multilabel Classification</h4>
+<p>Sometimes, more than one label fits!</p>
+<p>Example:
+- 🎥 A movie could be both Sci-Fi <em>and</em> Comedy</p>
+<hr />
+<h2 id="unsupervised-learning">🧩 Unsupervised Learning</h2>
+<p>Here, the AI only gets <strong>features (x)</strong> — no labels. It figures out patterns on its own!</p>
+<h3 id="clustering">🧠 Clustering</h3>
+<p>Groups similar things together — like sorting socks 🧦 by color and size.</p>
+<p>Examples:
+- 🌸 Grouping flowers by petal size and shape
+- 🛍️ Segmenting customers by shopping habits</p>
+<blockquote>
+<p>Clustering is like classification, but without knowing the categories ahead of time.<br />
+You can even use clustering to <em>find</em> categories before training a classifier!</p>
+</blockquote>
+<hr />
+<h2 id="how-it-all-connects">🔁 How It All Connects</h2>
+<p>Sometimes you:
+1. Use <strong>clustering</strong> to find patterns
+2. Label those patterns
+3. Train a <strong>classification model</strong> to predict future labels</p>
+<hr />
+<h1 id="what-is-regression">🤖 What is Regression?</h1>
+<p>Regression is like teaching AI to <strong>guess numbers</strong> based on patterns it sees in past data.<br />
+It’s part of <strong>supervised learning</strong>, which means the AI learns from examples that include both:
+- <strong>Features (x)</strong> = the stuff we know (like temperature)
+- <strong>Labels (y)</strong> = the number we want to predict (like ice cream sales)</p>
+<h2 id="_1"><a class="glightbox" href="../assets/supervised-training.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Supervised Training" src="../assets/supervised-training.png" /></a></h2>
+<h1 id="how-ai-learns-to-predict-4-simple-steps">🧠 How AI Learns to Predict: 4 Simple Steps</h1>
+<h2 id="1-split-the-data">1. 🎲 Split the Data</h2>
+<p>Break your data into two parts:
+- <strong>Training data</strong> to teach the AI
+- <strong>Validation data</strong> to test how well it learned</p>
+<hr />
+<h2 id="2-train-the-model">2. 🧠 Train the Model</h2>
+<p>Use an algorithm (like <strong>linear regression</strong>) to find patterns in the training data and build a model.</p>
+<hr />
+<h2 id="3-test-the-model">3. 🧪 Test the Model</h2>
+<p>Use the validation data to make predictions and see how close the AI’s guesses (ŷ) are to the real answers (y).</p>
+<hr />
+<h2 id="4-measure-improve">4. 📏 Measure &amp; Improve</h2>
+<p>Compare the predicted answers to the real ones.<br />
+Use metrics (like MAE, MSE, RMSE, or R²) to see how accurate the model is.<br />
+Then tweak the algorithm or settings and repeat until it’s awesome!</p>
+<hr />
+<p>And that’s how AI gets smarter with every loop! 🔁</p>
+<hr />
+<h2 id="visual-example">📊 Visual Example</h2>
+<p>Imagine a scatter plot with dots showing how many ice creams were sold at different temperatures.<br />
+The regression line goes through the middle of the dots, showing the trend.</p>
+<hr />
+<h1 id="part-2-evaluating-a-regression-model">🧪 Part 2: Evaluating a Regression Model</h1>
+<p>Once your model is trained, it’s time to test how well it works!</p>
+<h2 id="step-1-use-the-validation-data">🧾 Step 1: Use the Validation Data</h2>
+<p>We saved some data earlier — now we use it to:
+- Make predictions using the model
+- Compare those predictions to the real answers</p>
+<p>Example:</p>
+<table>
+<thead>
+<tr>
+<th>Temperature (x)</th>
+<th>Actual Sales (y)</th>
+<th>Predicted Sales (ŷ)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>52</td>
+<td>0</td>
+<td>2</td>
+</tr>
+<tr>
+<td>67</td>
+<td>14</td>
+<td>17</td>
+</tr>
+<tr>
+<td>70</td>
+<td>23</td>
+<td>20</td>
+</tr>
+<tr>
+<td>73</td>
+<td>22</td>
+<td>23</td>
+</tr>
+<tr>
+<td>78</td>
+<td>26</td>
+<td>28</td>
+</tr>
+<tr>
+<td>83</td>
+<td>36</td>
+<td>33</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="how-do-we-measure-accuracy">📏 How Do We Measure Accuracy?</h2>
+<h3 id="1-mae-mean-absolute-error">1. <strong>MAE (Mean Absolute Error)</strong></h3>
+<p>Average of how far off the predictions were — no matter if too high or too low.<br />
+🧮 Example: MAE = 2.33 ice creams</p>
+<h3 id="2-mse-mean-squared-error">2. <strong>MSE (Mean Squared Error)</strong></h3>
+<p>Like MAE, but it <strong>squares</strong> the errors — so big mistakes count more.<br />
+🧮 Example: MSE = 6</p>
+<h3 id="3-rmse-root-mean-squared-error">3. <strong>RMSE (Root Mean Squared Error)</strong></h3>
+<p>The square root of MSE — gives us the error in real units (like ice creams!).<br />
+🧮 Example: RMSE = 2.45 ice creams</p>
+<h3 id="4-r2-r-squared">4. <strong>R² (R-Squared)</strong></h3>
+<p>Tells us how much of the pattern the model explains.<br />
+- 1 = perfect prediction<br />
+- 0 = no better than guessing<br />
+🧮 Example: R² = 0.95 (which is awesome!)</p>
+<hr />
+<h2 id="keep-improving">🔁 Keep Improving!</h2>
+<p>To get the best model, data scientists try different things:
+- 🧠 Choose better features
+- 🔧 Try different algorithms
+- ⚙️ Tweak the settings (called hyperparameters)</p>
+<p>They repeat the process until the model is accurate enough to use in the real world!</p>
+<hr />
+<h1 id="binary-classification_1">🧠 Binary Classification</h1>
+<hr />
+<h2 id="whats-binary-classification">🎯 What’s Binary Classification?</h2>
+<p>Imagine teaching a robot to answer <strong>yes or no</strong> questions. That’s binary classification. It’s like giving the robot a bunch of examples and asking it to guess if something is <strong>true (1)</strong> or <strong>false (0)</strong>.</p>
+<p>Instead of guessing numbers (like in regression), the robot guesses <strong>probabilities</strong> — like “I’m 70% sure this person has diabetes.”</p>
+<hr />
+<h2 id="training-the-robot">🧪 Training the Robot</h2>
+<p>We give it data like this:</p>
+<table>
+<thead>
+<tr>
+<th>Blood Glucose (x)</th>
+<th>Diabetic? (y)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>67</td>
+<td>0</td>
+</tr>
+<tr>
+<td>103</td>
+<td>1</td>
+</tr>
+<tr>
+<td>114</td>
+<td>1</td>
+</tr>
+<tr>
+<td>72</td>
+<td>0</td>
+</tr>
+<tr>
+<td>116</td>
+<td>1</td>
+</tr>
+<tr>
+<td>65</td>
+<td>0</td>
+</tr>
+</tbody>
+</table>
+<p>Then we use a smart math trick called <strong>logistic regression</strong> to draw an S-shaped curve (called a <strong>sigmoid</strong>) that helps the robot decide.</p>
+<h3 id="the-robots-brain-function">🤖 The Robot’s Brain (Function)</h3>
+<p>f(x) = P(y = 1 | x)</p>
+<p>This means: “What’s the chance y is 1 (true) given x?”</p>
+<p>If the robot sees a glucose level of 90 and the curve says 0.9 (90%), it predicts <strong>yes</strong> — this person probably has diabetes.</p>
+<hr />
+<h2 id="testing-the-robot">🧪 Testing the Robot</h2>
+<p>We test it with new data:</p>
+<table>
+<thead>
+<tr>
+<th>Blood Glucose (x)</th>
+<th>Diabetic? (y)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>66</td>
+<td>0</td>
+</tr>
+<tr>
+<td>107</td>
+<td>1</td>
+</tr>
+<tr>
+<td>112</td>
+<td>1</td>
+</tr>
+<tr>
+<td>71</td>
+<td>0</td>
+</tr>
+<tr>
+<td>87</td>
+<td>1</td>
+</tr>
+<tr>
+<td>89</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+<p>The robot makes predictions (ŷ), and we compare them to the real answers (y).</p>
+<hr />
+<h2 id="confusion-matrix-aka-scoreboard">📊 Confusion Matrix (aka Scoreboard)</h2>
+<table>
+<thead>
+<tr>
+<th>Actual (y)</th>
+<th>Predicted (ŷ)</th>
+<th>Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>0</td>
+<td>✅ True Negative</td>
+</tr>
+<tr>
+<td>1</td>
+<td>1</td>
+<td>✅ True Positive</td>
+</tr>
+<tr>
+<td>1</td>
+<td>1</td>
+<td>✅ True Positive</td>
+</tr>
+<tr>
+<td>0</td>
+<td>0</td>
+<td>✅ True Negative</td>
+</tr>
+<tr>
+<td>1</td>
+<td>0</td>
+<td>❌ False Negative</td>
+</tr>
+<tr>
+<td>1</td>
+<td>1</td>
+<td>✅ True Positive</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="metrics-that-matter">📈 Metrics That Matter</h2>
+<h3 id="accuracy">🎯 Accuracy</h3>
+<p>How often the robot gets it right:</p>
+<p>Accuracy = (TP + TN) / Total = (3 + 2) / 6 = 0.83</p>
+<h3 id="recall">🔍 Recall</h3>
+<p>How many actual diabetics the robot found:</p>
+<p>Recall = TP / (TP + FN) = 3 / (3 + 1) = 0.75</p>
+<h3 id="precision">🎯 Precision</h3>
+<p>How many predicted diabetics were actually diabetic:</p>
+<p>Precision = TP / (TP + FP) = 3 / (3 + 0) = 1.0</p>
+<h3 id="f1-score">🧮 F1-Score</h3>
+<p>Combo of precision and recall:</p>
+<p>F1 = (2 × Precision × Recall) / (Precision + Recall) = 0.86</p>
+<hr />
+<h2 id="roc-curve-auc">📉 ROC Curve &amp; AUC</h2>
+<p>We plot how good the robot is at guessing across all thresholds. A perfect robot gets an <strong>AUC of 1.0</strong>. Random guessing gets <strong>0.5</strong>.</p>
+<p>Our robot? <strong>AUC = 0.875</strong> 🎉<br />
+That means it’s way better than guessing!</p>
+<hr />
+<h2 id="tldr">🧠 TL;DR</h2>
+<p>Binary classification is like teaching a robot to say <strong>yes or no</strong> based on data. We train it, test it, and score it using metrics like accuracy, recall, precision, and AUC. The better the scores, the smarter the robot!</p>
+<h1 id="multiclass-classification-level-up-your-ml-game">🧠 Multiclass Classification – Level Up Your ML Game 🎮</h1>
+<h2 id="whats-the-vibe">🚀 What’s the Vibe?</h2>
+<p>Multiclass classification is like giving your model the power to choose between <em>more than two</em> options. Instead of just “yes” or “no,” it’s like “Adelie,” “Gentoo,” or “Chinstrap.” 🐧 It’s part of the supervised ML squad, just like regression and binary classification. You train it, validate it, and test it — classic ML grind.</p>
+<hr />
+<h2 id="penguin-example-because-penguins-are-cool">🧊 Penguin Example (Because Penguins Are Cool)</h2>
+<p>We’ve got penguins, and we’re checking out their flipper lengths (📏). Based on that, we wanna guess their species:</p>
+<ul>
+<li><code>0</code>: Adelie  </li>
+<li><code>1</code>: Gentoo  </li>
+<li><code>2</code>: Chinstrap  </li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Flipper Length (x)</th>
+<th>Species (y)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>167</td>
+<td>0</td>
+</tr>
+<tr>
+<td>172</td>
+<td>0</td>
+</tr>
+<tr>
+<td>225</td>
+<td>2</td>
+</tr>
+<tr>
+<td>197</td>
+<td>1</td>
+</tr>
+<tr>
+<td>189</td>
+<td>1</td>
+</tr>
+<tr>
+<td>232</td>
+<td>2</td>
+</tr>
+<tr>
+<td>158</td>
+<td>0</td>
+</tr>
+</tbody>
+</table>
+<p><em>Note: Real-world data would have more features, but we’re keeping it chill with just one.</em></p>
+<hr />
+<h2 id="how-do-we-train-this-thing">🛠️ How Do We Train This Thing?</h2>
+<p>We’ve got two main ways to train a multiclass model:</p>
+<h3 id="1-one-vs-rest-ovr">1. One-vs-Rest (OvR)</h3>
+<p>Train a separate binary classifier for each class. Each one says, “Is this my class or not?”</p>
+<ul>
+<li><code>f0(x) = P(y=0 | x)</code>  </li>
+<li><code>f1(x) = P(y=1 | x)</code>  </li>
+<li><code>f2(x) = P(y=2 | x)</code>  </li>
+</ul>
+<p>Whichever one gives the highest probability wins. 🏆</p>
+<h3 id="2-multinomial-aka-softmax-squad">2. Multinomial (aka Softmax Squad)</h3>
+<p>One model, one function, all the probs:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>f(x) = [P(y=0|x), P(y=1|x), P(y=2|x)]
+</span></code></pre></div>
+<p>Example output: <code>[0.2, 0.3, 0.5]</code> → Class 2 wins.</p>
+<hr />
+<h2 id="time-to-evaluate">📊 Time to Evaluate</h2>
+<p>Let’s see how our model did on some new penguins:</p>
+<table>
+<thead>
+<tr>
+<th>Flipper Length (x)</th>
+<th>Actual (y)</th>
+<th>Predicted (ŷ)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>165</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>171</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>205</td>
+<td>2</td>
+<td>1</td>
+</tr>
+<tr>
+<td>195</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>183</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>221</td>
+<td>2</td>
+<td>2</td>
+</tr>
+<tr>
+<td>214</td>
+<td>2</td>
+<td>2</td>
+</tr>
+</tbody>
+</table>
+<h3 id="confusion-matrix-vibes">🔍 Confusion Matrix Vibes</h3>
+<table>
+<thead>
+<tr>
+<th>Class</th>
+<th>TP</th>
+<th>TN</th>
+<th>FP</th>
+<th>FN</th>
+<th>Accuracy</th>
+<th>Recall</th>
+<th>Precision</th>
+<th>F1-Score</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>2</td>
+<td>5</td>
+<td>0</td>
+<td>0</td>
+<td>1.00</td>
+<td>1.00</td>
+<td>1.00</td>
+<td>1.00</td>
+</tr>
+<tr>
+<td>1</td>
+<td>2</td>
+<td>4</td>
+<td>1</td>
+<td>0</td>
+<td>0.86</td>
+<td>1.00</td>
+<td>0.67</td>
+<td>0.80</td>
+</tr>
+<tr>
+<td>2</td>
+<td>2</td>
+<td>4</td>
+<td>0</td>
+<td>1</td>
+<td>0.86</td>
+<td>0.67</td>
+<td>1.00</td>
+<td>0.80</td>
+</tr>
+</tbody>
+</table>
+<h3 id="overall-stats">📈 Overall Stats</h3>
+<ul>
+<li><strong>Accuracy:</strong> (13 + 6) ÷ (13 + 6 + 1 + 1) = <strong>0.90</strong>  </li>
+<li><strong>Recall:</strong> 6 ÷ (6 + 1) = <strong>0.86</strong>  </li>
+<li><strong>Precision:</strong> 6 ÷ (6 + 1) = <strong>0.86</strong>  </li>
+<li><strong>F1-Score:</strong> (2 × 0.86 × 0.86) ÷ (0.86 + 0.86) = <strong>0.86</strong></li>
+</ul>
+<hr />
+<h2 id="tldr_1">🎉 TL;DR</h2>
+<p>Multiclass classification = your model picking the best label from a bunch. Whether it’s OvR or softmax, it’s all about those probabilities. And when it’s done right? You get stats that slap. 💥</p>
+<h1 id="clustering-group-vibes-only">🧠 Clustering – Group Vibes Only 🌸</h1>
+<h2 id="whats-clustering-all-about">🤖 What’s Clustering All About?</h2>
+<p><a class="glightbox" href="../assets/flowers.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="flowers" src="../assets/flowers.png" /></a></p>
+<p>Clustering is like sorting your playlist by vibe instead of genre. 🎧 It’s <strong>unsupervised ML</strong>, which means no labels, no rules — just grouping stuff based on how similar it is. The model doesn’t know what the “right” answer is. It just finds patterns and builds squads (aka clusters) based on features.</p>
+<hr />
+<h2 id="flower-power-example">🌼 Flower Power Example</h2>
+<p>Imagine you’re a botanist checking out flowers. You count how many <strong>leaves</strong> and <strong>petals</strong> each one has:</p>
+<table>
+<thead>
+<tr>
+<th>Leaves (x₁)</th>
+<th>Petals (x₂)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>5</td>
+</tr>
+<tr>
+<td>0</td>
+<td>6</td>
+</tr>
+<tr>
+<td>1</td>
+<td>3</td>
+</tr>
+<tr>
+<td>1</td>
+<td>3</td>
+</tr>
+<tr>
+<td>1</td>
+<td>6</td>
+</tr>
+<tr>
+<td>1</td>
+<td>8</td>
+</tr>
+<tr>
+<td>2</td>
+<td>3</td>
+</tr>
+<tr>
+<td>2</td>
+<td>7</td>
+</tr>
+<tr>
+<td>2</td>
+<td>8</td>
+</tr>
+</tbody>
+</table>
+<p>No labels, no species — just raw data. The goal? Group similar flowers together based on leaf and petal counts. 🌿🌸</p>
+<hr />
+<h2 id="training-the-model-k-means-style">🛠️ Training the Model – K-Means Style</h2>
+<p>One of the go-to clustering algorithms is <strong>K-Means</strong>. Here’s how it rolls:</p>
+<ol>
+<li><strong>Vectorize the features</strong> → Turn each flower into a point in space: <code>[x₁, x₂]</code>.</li>
+<li><strong>Pick your number of clusters (k)</strong> → Say you want 3 squads, set <code>k = 3</code>.</li>
+<li><strong>Drop random centroids</strong> → These are the squad leaders.</li>
+<li><strong>Assign each flower to the closest centroid</strong> → Squad up!</li>
+<li><strong>Move centroids to the center of their squad</strong> → Based on average distance.</li>
+<li><strong>Reassign flowers if needed</strong> → If they vibe more with another squad.</li>
+<li><strong>Repeat until stable</strong> → Or hit max iterations.</li>
+</ol>
+<p>🎞️ Imagine an animation where flowers keep switching squads until everyone’s chill.</p>
+<h2 id="_2"><a class="glightbox" href="../assets/clustering.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Clustering" src="../assets/clustering.gif" /></a></h2>
+<h2 id="evaluating-the-squad-game">📊 Evaluating the Squad Game</h2>
+<p>Since there’s no “correct” label, we judge clustering by how tight and separate the squads are. Here’s how:</p>
+<ul>
+<li><strong>Avg distance to cluster center</strong> → How close each flower is to its squad leader.</li>
+<li><strong>Avg distance to other centers</strong> → How far it is from other squads.</li>
+<li><strong>Max distance to cluster center</strong> → The outlier in the squad.</li>
+<li><strong>Silhouette score</strong> → From -1 to 1. Closer to 1 = better squad vibes.</li>
+</ul>
+<hr />
+<h2 id="tldr_2">🎉 TL;DR</h2>
+<p>Clustering = unsupervised squad building. No labels, just vibes. K-Means helps group similar data points, and we measure how good the squads are by how close and separate they are. 🌈</p>
+<h1 id="deep-learning-brain-mode-activated">🧠 Deep Learning – Brain Mode Activated 🧬</h1>
+<h2 id="what-is-deep-learning">🤖 What Is Deep Learning?</h2>
+<p>Deep learning is like giving your computer a mini brain. 🧠 It uses <strong>artificial neural networks</strong> to learn stuff — kinda like how our brains fire signals, but with math instead of electricity.</p>
+<table>
+<thead>
+<tr>
+<th>🧬 Real Brain</th>
+<th>💻 AI Brain</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Neurons fire signals</td>
+<td>Neurons = math functions with weights</td>
+</tr>
+<tr>
+<td>Signals pass to other neurons</td>
+<td>Outputs pass through activation functions</td>
+</tr>
+</tbody>
+</table>
+<p>These networks have <strong>layers on layers</strong> of neurons — that’s why it’s called <em>deep</em> learning. You can use it for all kinds of ML tasks: regression, classification, NLP, computer vision — basically, it’s the superhero of ML. 🦸‍♂️</p>
+<hr />
+<h2 id="penguin-classifier-example">🐧 Penguin Classifier Example</h2>
+<p>Let’s say we wanna ID penguin species using deep learning. We feed in some penguin stats:</p>
+<ul>
+<li>Bill length  </li>
+<li>Bill depth  </li>
+<li>Flipper length  </li>
+<li>Weight  </li>
+</ul>
+<p>So our input vector is:<br />
+<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>x = [x₁, x₂, x₃, x₄]
+</span></code></pre></div></p>
+<p>And we’re trying to predict the species:</p>
+<ul>
+<li><code>0</code>: Adelie  </li>
+<li><code>1</code>: Gentoo  </li>
+<li><code>2</code>: Chinstrap  </li>
+</ul>
+<p>The output is a vector of probabilities:<br />
+<div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>y = [P(y=0|x), P(y=1|x), P(y=2|x)]
+</span></code></pre></div></p>
+<h3 id="example-run">🧪 Example Run</h3>
+<p>Input:<br />
+<div class="language-text highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>x = [37.3, 16.8, 19.2, 30.0]
+</span></code></pre></div></p>
+<p>Output:<br />
+<div class="language-text highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>ŷ = [0.2, 0.7, 0.1]
+</span></code></pre></div></p>
+<p>Prediction: Class <code>1</code> → Gentoo 🐧</p>
+<hr />
+<h2 id="how-does-it-learn">🧠 How Does It Learn?</h2>
+<p>Training a neural network = teaching it to get better at guessing. Here’s the vibe:</p>
+<ol>
+<li><strong>Start with random weights (w)</strong>  </li>
+<li><strong>Feed training data (x) through the network</strong>  </li>
+<li><strong>Get predictions (ŷ)</strong>  </li>
+<li><strong>Compare with actual labels (y)</strong> using a <strong>loss function</strong>  </li>
+<li><strong>Calculate how wrong it was</strong>  </li>
+<li><strong>Use math magic (gradient descent)</strong> to tweak the weights  </li>
+<li><strong>Repeat over multiple rounds (epochs)</strong> until it’s 🔥</li>
+</ol>
+<h3 id="example-loss">🧪 Example Loss</h3>
+<p>Predicted:<br />
+<div class="language-text highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>ŷ = [0.3, 0.1, 0.6]
+</span></code></pre></div></p>
+<p>Actual:<br />
+<div class="language-text highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>y = [0.0, 0.0, 1.0]
+</span></code></pre></div></p>
+<p>Loss = difference =<br />
+<div class="language-text highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>[0.3, 0.1, 0.4]
+</span></code></pre></div></p>
+<p>The model uses this info to adjust weights and get better next time.</p>
+<hr />
+<h2 id="pro-tip">⚡ Pro Tip</h2>
+<p>Neural networks don’t train one case at a time — they batch data into <strong>matrices</strong> and use <strong>linear algebra</strong> to crunch numbers fast. That’s why we use <strong>GPUs</strong> — they’re built for this kind of heavy lifting. 💪</p>
+<hr />
+<h2 id="tldr_3">🎉 TL;DR</h2>
+<p>Deep learning = brain-like ML using layers of neurons. It learns by tweaking weights to reduce errors and gets better with each round. Perfect for complex stuff like image recognition, language, and yes — penguins. 🐧💥</p>
+<h1 id="transformers-the-real-mvps-of-ai">🤖 Transformers – The Real MVPs of AI 💬</h1>
+<h2 id="whats-the-deal">🧠 What’s the Deal?</h2>
+<p>Transformers are the tech behind all the cool generative AI stuff — like ChatGPT, Bing Chat, and more. They’re built for <strong>natural language processing (NLP)</strong> and can do things like:</p>
+<ul>
+<li>💬 Understand vibes (sentiment)</li>
+<li>📚 Summarize stuff</li>
+<li>🔍 Compare meanings</li>
+<li>✍️ Generate new text</li>
+</ul>
+<p>They’re super smart because they’ve been trained on <em>massive</em> amounts of text. The secret sauce? A special architecture called the <strong>Transformer</strong>.</p>
+<hr />
+<h2 id="transformer-architecture-101">🏗️ Transformer Architecture 101</h2>
+<p>Transformers have two main parts:</p>
+<ul>
+<li><strong>Encoder</strong> → Understands the input text  </li>
+<li><strong>Decoder</strong> → Generates new text  </li>
+</ul>
+<p>They break down text into <strong>tokens</strong> (like words or parts of words), then use a technique called <strong>attention</strong> to figure out which words matter most. The result? Super smart predictions that sound human.</p>
+<h3 id="example-flow">🔁 Example Flow</h3>
+<p>Input: <code>"When my dog was"</code><br />
+Output: <code>"a puppy"</code> 🐶</p>
+<hr />
+<h2 id="tokenization-breaking-it-down">🧩 Tokenization – Breaking It Down</h2>
+<p>First step: split text into tokens. Example:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>&quot;I heard a dog bark loudly at a cat&quot;
+</span></code></pre></div>
+<p>Tokens:
+- I → 1<br />
+- heard → 2<br />
+- a → 3<br />
+- dog → 4<br />
+- bark → 5<br />
+- loudly → 6<br />
+- at → 7<br />
+- cat → 8  </p>
+<p>So the sentence becomes:<br />
+<div class="language-text highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>{1 2 3 4 5 6 7 3 8}
+</span></code></pre></div></p>
+<p>As training continues, more tokens get added:
+- meow → 9<br />
+- skateboard → 10<br />
+- …and so on</p>
+<hr />
+<h2 id="embeddings-giving-tokens-meaning">🧠 Embeddings – Giving Tokens Meaning</h2>
+<p>Token IDs are cool, but they don’t tell us what words <em>mean</em>. That’s where <strong>embeddings</strong> come in — they’re vectors (like <code>[10, 3, 1]</code>) that represent the <em>semantic</em> meaning of a token.</p>
+<p>Example:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>dog → [10, 3, 2]  
+</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>cat → [10, 3, 1]  
+</span><span id="__span-10-3"><a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>puppy → [5, 2, 1]  
+</span><span id="__span-10-4"><a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a>skateboard → [-3, 3, 2]
+</span></code></pre></div>
+<p>Vectors for “dog,” “cat,” and “puppy” point in similar directions → they’re semantically linked. “Skateboard”? Totally different vibe. 🛹</p>
+<hr />
+<h2 id="attention-what-words-matter-most">👀 Attention – What Words Matter Most?</h2>
+<p>Attention layers help the model figure out which words in a sentence are most important. It’s like giving each word a spotlight based on context.</p>
+<h3 id="self-attention">🔍 Self-Attention</h3>
+<p>In the encoder:<br />
+- “bark” in “dog bark” ≠ “bark” in “tree bark”<br />
+- Context changes meaning → embeddings adapt</p>
+<p>In the decoder:<br />
+- Predicts the next word based on what’s already been said<br />
+- Example:<br />
+  <div class="language-text highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>&quot;I heard a dog&quot; → next word = &quot;bark&quot;
+</span></code></pre></div></p>
+<h3 id="positional-encoding">🧠 Positional Encoding</h3>
+<p>Each token gets a position tag so the model knows the order:
+<div class="language-text highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>[1,5,6,2] → I  
+</span><span id="__span-12-2"><a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a>[2,9,3,1] → heard  
+</span><span id="__span-12-3"><a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a>[3,1,1,2] → a  
+</span><span id="__span-12-4"><a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a>[4,10,3,2] → dog
+</span></code></pre></div></p>
+<hr />
+<h2 id="multi-head-attention-supercharged-predictions">🔄 Multi-Head Attention – Supercharged Predictions</h2>
+<p>Instead of one attention score, the model calculates <em>multiple</em> scores using different parts of the embeddings. Then a neural network picks the best next token.</p>
+<p>The process repeats:
+1. Predict next token<br />
+2. Add it to the sequence<br />
+3. Use the updated sequence to predict the next one<br />
+4. Keep going until the sentence is complete</p>
+<hr />
+<h2 id="training-vs-inferencing">🧪 Training vs. Inferencing</h2>
+<p>During training:
+- The model knows the full sentence<br />
+- It masks future tokens and learns by comparing predictions to actual tokens<br />
+- Adjusts weights to reduce errors (loss)</p>
+<p>During inferencing:
+- The model uses what it’s learned to predict new text<br />
+- No peeking ahead — just vibes and math</p>
+<hr />
+<h2 id="why-transformers-are">✨ Why Transformers Are 🔥</h2>
+<p>Models like <strong>GPT-4</strong> are trained on <em>huge</em> datasets and use this transformer magic to generate text that feels human. It’s not “thinking” — it’s just really good at predicting what comes next.</p>
+<p>So when you type a prompt, it responds with a completion that makes sense — thanks to embeddings, attention, and a massive vocabulary.</p>
+<hr />
+<h2 id="tldr_4">🎉 TL;DR</h2>
+<p>Transformers = the brains behind generative AI.<br />
+They tokenize text, embed meaning, use attention to focus, and generate smart responses.<br />
+It’s not magic — it’s math, data, and a whole lotta training. 💥</p>
+<h1 id="module-assessment">🧪 Module Assessment</h1>
+<h3 id="1-you-want-to-create-a-model-to-predict-the-cost-of-heating-an-office-building-based-on-its-size-in-square-feet-and-the-number-of-employees-working-there-what-kind-of-machine-learning-problem-is-this">1️⃣ You want to create a model to predict the cost of heating an office building based on its size in square feet and the number of employees working there. What kind of machine learning problem is this?</h3>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Regression  </li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Classification  </li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Clustering  </li>
+</ul>
+<hr />
+<h3 id="2-you-need-to-evaluate-a-classification-model-which-metric-can-you-use">2️⃣ You need to evaluate a classification model. Which metric can you use?</h3>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Mean squared error (MSE)  </li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Precision  </li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Silhouette  </li>
+</ul>
+<hr />
+<h3 id="3-in-deep-learning-what-is-the-purpose-of-a-loss-function">3️⃣ In deep learning, what is the purpose of a loss function?</h3>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> To remove data for which no known label values are provided  </li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> To evaluate the aggregate difference between predicted and actual label values  </li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> To calculate the cost of training a neural network rather than a statistical model  </li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/codess-aus" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://bsky.app/profile/codess-aus.bsky.social" target="_blank" rel="noopener" title="bsky.app" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.linkedin.com/in/michellesandford" target="_blank" rel="noopener" title="www.linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3M135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5m282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.expand", "navigation.path", "navigation.top", "search.highlight", "search.share", "toc.follow", "content.code.copy", "content.code.select", "content.tabs.link"], "search": "../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.56ea9cef.min.js"></script>
+      
+    
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
+</html>
