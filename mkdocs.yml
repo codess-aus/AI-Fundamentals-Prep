@@ -88,8 +88,9 @@ markdown_extensions:
 # Page tree
 nav:
   - Home: index.md
-  - Getting Started:
+  - Introduction:
     - Introduction to AI: 00-introduction/index.md
+  - Machine Learning:
     - Machine Learning Fundamentals: 01-machinelearning/index.md
     - Azure Machine Learning: 02-Azure-ML/index.md
   - Generative AI:
